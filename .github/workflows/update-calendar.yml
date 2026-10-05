@@ -1,6 +1,12 @@
 name: Build Star Citizen Calendar
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - events.json
+      - generate_calendar.py
+      - .github/workflows/update-calendar.yml
   push:
     branches: [main]
     paths:
@@ -14,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: star-citizen-calendar
+  group: star-citizen-calendar-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -38,7 +44,17 @@ jobs:
           grep -q '^END:VCALENDAR' star-citizen-events.ics
           test "$(grep -c '^BEGIN:VEVENT' star-citizen-events.ics)" -gt 0
 
+      - name: Verify PR has generated calendar committed
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet -- star-citizen-events.ics; then
+            echo "star-citizen-events.ics is out of date. Run: python generate_calendar.py"
+            git diff -- star-citizen-events.ics
+            exit 1
+          fi
+
       - name: Commit calendar if changed
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- star-citizen-events.ics; then
             echo "Calendar is already current."

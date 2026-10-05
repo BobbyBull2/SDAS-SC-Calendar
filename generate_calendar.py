@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json, hashlib
-from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -23,7 +22,7 @@ def ymd(value):
 
 data=json.loads(DATA.read_text(encoding="utf-8"))
 events=data["events"]
-stamp=datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+stamp="20261005T180000Z"
 lines=[
 "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//SDAS//Star Citizen Events//EN",
 "CALSCALE:GREGORIAN","METHOD:PUBLISH",

@@ -1,0 +1,36 @@
+name: Test Discord Calendar Sync
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch SDAS Discord scheduled events
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_GUILD_ID: "1518410019249459236"
+        run: python fetch_discord_events.py
+
+      - name: Show safe summary
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("discord-events.json", encoding="utf-8"))
+          print("Guild:", d["guild_id"])
+          print("Scheduled events found:", len(d["events"]))
+          for e in d["events"]:
+              print("-", e["title"], "|", e["start"])
+          PY

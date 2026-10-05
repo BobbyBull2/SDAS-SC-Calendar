@@ -1,195 +1,190 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//SDSS//Star Citizen Events//EN
+PRODID:-//SDAS//Star Citizen Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Star Citizen Events
 X-WR-CALDESC:Major Star Citizen events. CONFIRMED entries use published R
- SI dates; TENTATIVE entries are placeholders until CIG confirms exact da
- tes.
+ SI dates\; TENTATIVE entries are placeholders until CIG confirms exact d
+ ates.
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-UID:33f9a7fdb914ebd55266@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:red-festival-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20260217
 DTEND;VALUE=DATE:20260218
 SUMMARY:Red Festival 2956
-DESCRIPTION:CONFIRMED — RSI This Week in Star Citizen: Red Festival 2956 
- starts February 17\, 2026.
+DESCRIPTION:CONFIRMED — RSI: Red Festival 2956 starts February 17\, 2026.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:13cbb023d6ba5fbbc899@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:stella-fortuna-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20260312
 DTEND;VALUE=DATE:20260331
 SUMMARY:Stella Fortuna 2956
-DESCRIPTION:CONFIRMED — RSI Stella Fortuna 2956 contest/event window: Mar
- ch 12 through March 30\, 2026.
+DESCRIPTION:CONFIRMED — RSI Stella Fortuna 2956 event window: March 12 th
+ rough March 30\, 2026.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:b8569310c360ffa95bda@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:defensecon-2956---free-fly@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260528
 SUMMARY:DefenseCon 2956 + Free Fly
-DESCRIPTION:CONFIRMED — RSI DefenseCon 2956 ran May 14 through May 27\, w
- ith Star Citizen free to play through May 27.
+DESCRIPTION:CONFIRMED — RSI DefenseCon 2956 and Free Fly through May 27.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dc88d1ed9410458a2342@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:alien-week-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20260617
 DTEND;VALUE=DATE:20260707
 SUMMARY:Alien Week 2956
-DESCRIPTION:CONFIRMED — RSI Alien Week 2956 Xeno Craft Challenge window: 
- June 17 through July 6\, 2026.
+DESCRIPTION:CONFIRMED — RSI Alien Week 2956 event window: June 17 through
+  July 6\, 2026.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:f94c0e2d9f3dc2d39ddc@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:pirate-week-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260929
 SUMMARY:Pirate Week 2956
-DESCRIPTION:CONFIRMED — RSI Pirate Week 2026 event/contest window: Septem
- ber 9 through September 28\, 2026.
+DESCRIPTION:CONFIRMED — RSI Pirate Week 2956 event window: September 9 th
+ rough September 28\, 2026.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:cca40f811bbbcae35fa0@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:day-of-the-vara-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261101
 SUMMARY:[TENTATIVE] Day of the Vara 2956
-DESCRIPTION:TENTATIVE — Expected annual October Star Citizen event. Exact
-  2956 promotional/gameplay window should be updated when CIG confirms it
- .
+DESCRIPTION:TENTATIVE — Expected annual October event. Update when CIG co
+ nfirms exact dates.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:4c65d1562218cb6d5bf8@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:iae-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261204
 SUMMARY:[TENTATIVE] IAE 2956
-DESCRIPTION:TENTATIVE — Expected late-November Intergalactic Aerospace Ex
- po window. Replace these dates when CIG publishes the official IAE 2956 
- schedule.
+DESCRIPTION:TENTATIVE — Expected late-November IAE window. Update when CI
+ G confirms exact dates.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:8e49f653f525af7254f9@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:luminalia-2956@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
 SUMMARY:[ANNUAL] Luminalia 2956
-DESCRIPTION:ANNUAL — Luminalia is canonically celebrated annually on Dece
- mber 22. CIG's associated promotion/gift period may span additional date
- s.
+DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
+ G activities may span additional dates.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:c992766df6afbcd8466b@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:red-festival-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270301
 SUMMARY:[TENTATIVE] Red Festival 2957
-DESCRIPTION:TENTATIVE — Expected February 2957 event. Placeholder month\;
-  update when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected February event\; placeholder until CIG c
+ onfirms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:007cd2379cc68e6d3fd0@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:stella-fortuna-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270401
 SUMMARY:[TENTATIVE] Stella Fortuna 2957
-DESCRIPTION:TENTATIVE — Expected March 2957 event. Placeholder month\; up
- date when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected March event\; placeholder until CIG conf
+ irms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:7ce38251c43873d01c06@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:invictus-launch-week---defensecon-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270529
 SUMMARY:[TENTATIVE] Invictus Launch Week / DefenseCon 2957
-DESCRIPTION:TENTATIVE — Expected May 2957 event window. Update when CIG c
- onfirms exact dates.
+DESCRIPTION:TENTATIVE — Expected May event window\; update when CIG confi
+ rms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:35f7c3f02307b864f422@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:alien-week-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270612
 DTEND;VALUE=DATE:20270621
 SUMMARY:[TENTATIVE] Alien Week 2957
-DESCRIPTION:TENTATIVE — Expected June 2957 event window. Update when CIG 
- confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected June event window\; update when CIG conf
+ irms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:277d2e2a768dd7a2ba9c@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:foundation-festival-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270801
 SUMMARY:[TENTATIVE] Foundation Festival 2957
-DESCRIPTION:TENTATIVE — Expected July 2957 event. Placeholder month\; upd
- ate when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected July event\; placeholder until CIG confi
+ rms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:f149738701e9992b7f53@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:ship-showdown-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270901
 SUMMARY:[TENTATIVE] Ship Showdown 2957
-DESCRIPTION:TENTATIVE — Expected August 2957 event. Placeholder month\; u
- pdate when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected August event\; placeholder until CIG con
+ firms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:71346ea1bff0cef832cd@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:pirate-week-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20270909
 DTEND;VALUE=DATE:20270929
 SUMMARY:[TENTATIVE] Pirate Week 2957
-DESCRIPTION:TENTATIVE — Expected September 2957 event window based on the
-  annual event pattern\; update when CIG confirms.
+DESCRIPTION:TENTATIVE — Expected September event window\; update when CIG
+  confirms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:3cd7132bcd2c53c29e69@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:day-of-the-vara-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20271001
 DTEND;VALUE=DATE:20271101
 SUMMARY:[TENTATIVE] Day of the Vara 2957
-DESCRIPTION:TENTATIVE — Expected October 2957 event. Placeholder month\; 
- update when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected October event\; placeholder until CIG co
+ nfirms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:6ed1a4f9165a5360ee01@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:iae-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20271119
 DTEND;VALUE=DATE:20271203
 SUMMARY:[TENTATIVE] IAE 2957
-DESCRIPTION:TENTATIVE — Expected late-November 2957 event window. Update 
- when CIG confirms exact dates.
+DESCRIPTION:TENTATIVE — Expected late-November event window\; update when
+  CIG confirms.
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:d4c0add682fdce93f20d@sdss-star-citizen
-DTSTAMP:20261005T180128Z
+UID:luminalia-2957@sdas-star-citizen
+DTSTAMP:20261005T180000Z
 DTSTART;VALUE=DATE:20271222
 DTEND;VALUE=DATE:20271223
 SUMMARY:[ANNUAL] Luminalia 2957
-DESCRIPTION:ANNUAL — Luminalia is canonically celebrated annually on Dece
- mber 22\; associated CIG activities may use a wider window.
+DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
+ G activities may span additional dates.
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, hashlib
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -38,7 +38,7 @@ for e in events:
     ident=e["title"]+"|"+e["start"]
     if ident in seen: raise ValueError(f"Duplicate event: {ident}")
     seen.add(ident)
-    uid=hashlib.sha1(ident.encode()).hexdigest()[:20]+"@sdas-star-citizen"
+    uid="".join(c.lower() if c.isalnum() else "-" for c in e["title"]).strip("-")+"@sdas-star-citizen"
     summary=e["title"] if e["status"]=="CONFIRMED" else f'[{e["status"]}] {e["title"]}'
     lines += ["BEGIN:VEVENT",f"UID:{uid}",f"DTSTAMP:{stamp}",
               f'DTSTART;VALUE=DATE:{ymd(e["start"])}',f'DTEND;VALUE=DATE:{ymd(e["end"])}',

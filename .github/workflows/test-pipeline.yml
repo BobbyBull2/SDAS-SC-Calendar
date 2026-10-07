@@ -1,0 +1,33 @@
+name: Test PIPELINE Game News
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read game-news safely
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          channel="1519103965290168560"
+          req=urllib.request.Request(
+              f"https://discord.com/api/v10/channels/{channel}/messages?limit=10",
+              headers={"Authorization":"Bot "+os.environ["DISCORD_BOT_TOKEN"],"User-Agent":"SDAS-Calendar-Sync/1.0"})
+          with urllib.request.urlopen(req,timeout=30) as r:
+              messages=json.load(r)
+          print("Messages read:",len(messages))
+          for m in messages:
+              author=(m.get("author") or {}).get("username","")
+              text=(m.get("content") or "").replace("\n"," ")[:160]
+              embeds=m.get("embeds") or []
+              titles=[e.get("title","") for e in embeds if e.get("title")]
+              print("-",author,"|",text,"| embeds:",titles[:2])
+          PY

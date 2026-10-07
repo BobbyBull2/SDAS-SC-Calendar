@@ -38,6 +38,7 @@ for e in raw:
         "status": e.get("status"),
         "entity_type": e.get("entity_type"),
         "location": (e.get("entity_metadata") or {}).get("location") or "",
+        "recurrence_rule": e.get("recurrence_rule"),
         "source": f"https://discord.com/events/{GUILD_ID}/{e['id']}",
     })
 

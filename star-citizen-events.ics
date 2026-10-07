@@ -197,7 +197,7 @@ DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  hen be refined and used to craft you beautiful dudes new equipment and c
  omponents. This will be a new weekly event!\n\nView event in Discord: ht
  tps://discord.com/events/1518410019249459236/1544483191786578031
-RRULE:FREQ=WEEKLY;BYDAY=FR
+RRULE:FREQ=WEEKLY
 URL:https://discord.com/events/1518410019249459236/1544483191786578031
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -211,7 +211,7 @@ DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
  n\nView event in Discord: https://discord.com/events/1518410019249459236
  /1548466884045705350
-RRULE:FREQ=WEEKLY;BYDAY=TH
+RRULE:FREQ=WEEKLY
 URL:https://discord.com/events/1518410019249459236/1548466884045705350
 TRANSP:TRANSPARENT
 END:VEVENT

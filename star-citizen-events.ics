@@ -3,10 +3,9 @@ VERSION:2.0
 PRODID:-//SDAS//Star Citizen Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Star Citizen Events
-X-WR-CALDESC:Major Star Citizen events. CONFIRMED entries use published R
- SI dates\; TENTATIVE entries are placeholders until CIG confirms exact d
- ates.
+X-WR-CALNAME:SDAS Star Citizen Calendar
+X-WR-CALDESC:SDAS community calendar combining Star Citizen CIG/RSI event
+ s with SDAS Discord Scheduled Events.
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
@@ -193,11 +192,12 @@ DTSTAMP:20261005T180000Z
 DTSTART:20261009T000000Z
 DTEND:20261009T040000Z
 SUMMARY:[SDAS] Org Mining Event
-DESCRIPTION:Come join us in a massive resource mining extravaganza to sup
- ply the org with mats. These mats will then be refined and used to craft
-  you beautiful dudes new equipment and components. This will be a new we
- ekly event!\nhttps://discord.com/events/1518410019249459236/154448319178
- 6578031
+DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
+ ource mining extravaganza to supply the org with mats. These mats will t
+ hen be refined and used to craft you beautiful dudes new equipment and c
+ omponents. This will be a new weekly event!\n\nView event in Discord: ht
+ tps://discord.com/events/1518410019249459236/1544483191786578031
+RRULE:FREQ=WEEKLY;BYDAY=FR
 URL:https://discord.com/events/1518410019249459236/1544483191786578031
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -207,9 +207,11 @@ DTSTAMP:20261005T180000Z
 DTSTART:20261008T003000Z
 DTEND:20261008T043000Z
 SUMMARY:[SDAS] Worm Wednesday
-DESCRIPTION:Meet at Gaslight to battle the Valakkar. This is a weekly eve
- nt to help people get parts for Wikelo.\nhttps://discord.com/events/1518
- 410019249459236/1548466884045705350
+DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
+ e Valakkar. This is a weekly event to help people get parts for Wikelo.\
+ n\nView event in Discord: https://discord.com/events/1518410019249459236
+ /1548466884045705350
+RRULE:FREQ=WEEKLY;BYDAY=TH
 URL:https://discord.com/events/1518410019249459236/1548466884045705350
 TRANSP:TRANSPARENT
 END:VEVENT

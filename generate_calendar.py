@@ -26,6 +26,40 @@ def utc_ics(value):
     dt=datetime.fromisoformat(value.replace("Z","+00:00"))
     return dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
+def discord_rrule(rule):
+    if not rule:
+        return None
+    freq_map={0:"YEARLY",1:"MONTHLY",2:"WEEKLY",3:"DAILY"}
+    day_map={0:"MO",1:"TU",2:"WE",3:"TH",4:"FR",5:"SA",6:"SU"}
+    freq=freq_map.get(rule.get("frequency"))
+    if not freq:
+        return None
+    parts=[f"FREQ={freq}"]
+    interval=rule.get("interval") or 1
+    if interval != 1:
+        parts.append(f"INTERVAL={interval}")
+    weekdays=rule.get("by_weekday") or []
+    if weekdays:
+        days=[day_map[d] for d in weekdays if d in day_map]
+        if days:
+            parts.append("BYDAY="+",".join(days))
+    nweek=rule.get("by_n_weekday") or []
+    if nweek:
+        days=[f'{x["n"]}{day_map[x["day"]]}' for x in nweek if x.get("day") in day_map and x.get("n")]
+        if days:
+            parts.append("BYDAY="+",".join(days))
+    months=rule.get("by_month") or []
+    if months:
+        parts.append("BYMONTH="+",".join(str(x) for x in months))
+    mdays=rule.get("by_month_day") or []
+    if mdays:
+        parts.append("BYMONTHDAY="+",".join(str(x) for x in mdays))
+    if rule.get("count"):
+        parts.append(f'COUNT={rule["count"]}')
+    if rule.get("end"):
+        parts.append("UNTIL="+utc_ics(rule["end"]))
+    return ";".join(parts)
+
 data=json.loads(DATA.read_text(encoding="utf-8"))
 events=data["events"]
 discord_events=[]

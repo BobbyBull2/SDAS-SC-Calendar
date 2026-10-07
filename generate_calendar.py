@@ -60,14 +60,22 @@ for e in discord_events:
         continue
     start=utc_ics(e["start"])
     end=utc_ics(e["end"]) if e.get("end") else (datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(timezone.utc) + timedelta(hours=4)).strftime("%Y%m%dT%H%M%SZ")
-    desc=e.get("description") or "SDAS Discord Scheduled Event"
     source=e.get("source")
+    desc_parts=["SDAS Discord Scheduled Event"]
+    if e.get("description"):
+        desc_parts += ["", e["description"]]
+    if e.get("location"):
+        desc_parts += ["", "Location: "+e["location"]]
     if source:
-        desc += "\n" + source
+        desc_parts += ["", "View event in Discord: "+source]
+    desc="\n".join(desc_parts)
     lines += ["BEGIN:VEVENT",f'UID:discord-{e["id"]}@sdas-star-citizen',f"DTSTAMP:{stamp}",
               f"DTSTART:{start}",f"DTEND:{end}",
               f'SUMMARY:{esc("[SDAS] "+e.get("title","SDAS Event"))}',
               f"DESCRIPTION:{esc(desc)}"]
+    recurrence=discord_rrule(e.get("recurrence_rule"))
+    if recurrence:
+        lines.append(f"RRULE:{recurrence}")
     if e.get("location"):
         lines.append(f'LOCATION:{esc(e["location"])}')
     if source:

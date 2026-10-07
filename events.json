@@ -1,26 +1,134 @@
 {
   "calendar": {
-    "name": "Star Citizen Events",
-    "description": "Major Star Citizen events. CONFIRMED entries use published RSI dates; TENTATIVE entries are placeholders until CIG confirms exact dates."
+    "name": "SDAS Star Citizen Calendar",
+    "description": "SDAS community calendar combining Star Citizen CIG/RSI events with SDAS Discord Scheduled Events."
   },
   "events": [
-    {"title":"Red Festival 2956","start":"2026-02-17","end":"2026-02-18","status":"CONFIRMED","description":"RSI: Red Festival 2956 starts February 17, 2026."},
-    {"title":"Stella Fortuna 2956","start":"2026-03-12","end":"2026-03-31","status":"CONFIRMED","description":"RSI Stella Fortuna 2956 event window: March 12 through March 30, 2026."},
-    {"title":"DefenseCon 2956 + Free Fly","start":"2026-05-14","end":"2026-05-28","status":"CONFIRMED","description":"RSI DefenseCon 2956 and Free Fly through May 27."},
-    {"title":"Alien Week 2956","start":"2026-06-17","end":"2026-07-07","status":"CONFIRMED","description":"RSI Alien Week 2956 event window: June 17 through July 6, 2026."},
-    {"title":"Pirate Week 2956","start":"2026-09-09","end":"2026-09-29","status":"CONFIRMED","description":"RSI Pirate Week 2956 event window: September 9 through September 28, 2026."},
-    {"title":"Day of the Vara 2956","start":"2026-10-01","end":"2026-11-01","status":"TENTATIVE","description":"Expected annual October event. Update when CIG confirms exact dates."},
-    {"title":"IAE 2956","start":"2026-11-20","end":"2026-12-04","status":"TENTATIVE","description":"Expected late-November IAE window. Update when CIG confirms exact dates."},
-    {"title":"Luminalia 2956","start":"2026-12-22","end":"2026-12-23","status":"ANNUAL","description":"Luminalia is canonically celebrated December 22; CIG activities may span additional dates."},
-    {"title":"Red Festival 2957","start":"2027-02-01","end":"2027-03-01","status":"TENTATIVE","description":"Expected February event; placeholder until CIG confirms."},
-    {"title":"Stella Fortuna 2957","start":"2027-03-01","end":"2027-04-01","status":"TENTATIVE","description":"Expected March event; placeholder until CIG confirms."},
-    {"title":"Invictus Launch Week / DefenseCon 2957","start":"2027-05-15","end":"2027-05-29","status":"TENTATIVE","description":"Expected May event window; update when CIG confirms."},
-    {"title":"Alien Week 2957","start":"2027-06-12","end":"2027-06-21","status":"TENTATIVE","description":"Expected June event window; update when CIG confirms."},
-    {"title":"Foundation Festival 2957","start":"2027-07-01","end":"2027-08-01","status":"TENTATIVE","description":"Expected July event; placeholder until CIG confirms."},
-    {"title":"Ship Showdown 2957","start":"2027-08-01","end":"2027-09-01","status":"TENTATIVE","description":"Expected August event; placeholder until CIG confirms."},
-    {"title":"Pirate Week 2957","start":"2027-09-09","end":"2027-09-29","status":"TENTATIVE","description":"Expected September event window; update when CIG confirms."},
-    {"title":"Day of the Vara 2957","start":"2027-10-01","end":"2027-11-01","status":"TENTATIVE","description":"Expected October event; placeholder until CIG confirms."},
-    {"title":"IAE 2957","start":"2027-11-19","end":"2027-12-03","status":"TENTATIVE","description":"Expected late-November event window; update when CIG confirms."},
-    {"title":"Luminalia 2957","start":"2027-12-22","end":"2027-12-23","status":"ANNUAL","description":"Luminalia is canonically celebrated December 22; CIG activities may span additional dates."}
+    {
+      "title": "Red Festival 2956",
+      "start": "2026-02-17",
+      "end": "2026-02-18",
+      "status": "CONFIRMED",
+      "description": "RSI: Red Festival 2956 starts February 17, 2026."
+    },
+    {
+      "title": "Stella Fortuna 2956",
+      "start": "2026-03-12",
+      "end": "2026-03-31",
+      "status": "CONFIRMED",
+      "description": "RSI Stella Fortuna 2956 event window: March 12 through March 30, 2026."
+    },
+    {
+      "title": "DefenseCon 2956 + Free Fly",
+      "start": "2026-05-14",
+      "end": "2026-05-28",
+      "status": "CONFIRMED",
+      "description": "RSI DefenseCon 2956 and Free Fly through May 27."
+    },
+    {
+      "title": "Alien Week 2956",
+      "start": "2026-06-17",
+      "end": "2026-07-07",
+      "status": "CONFIRMED",
+      "description": "RSI Alien Week 2956 event window: June 17 through July 6, 2026."
+    },
+    {
+      "title": "Pirate Week 2956",
+      "start": "2026-09-09",
+      "end": "2026-09-29",
+      "status": "CONFIRMED",
+      "description": "RSI Pirate Week 2956 event window: September 9 through September 28, 2026."
+    },
+    {
+      "title": "Day of the Vara 2956",
+      "start": "2026-10-01",
+      "end": "2026-11-01",
+      "status": "TENTATIVE",
+      "description": "Expected annual October event. Update when CIG confirms exact dates."
+    },
+    {
+      "title": "IAE 2956",
+      "start": "2026-11-20",
+      "end": "2026-12-04",
+      "status": "TENTATIVE",
+      "description": "Expected late-November IAE window. Update when CIG confirms exact dates."
+    },
+    {
+      "title": "Luminalia 2956",
+      "start": "2026-12-22",
+      "end": "2026-12-23",
+      "status": "ANNUAL",
+      "description": "Luminalia is canonically celebrated December 22; CIG activities may span additional dates."
+    },
+    {
+      "title": "Red Festival 2957",
+      "start": "2027-02-01",
+      "end": "2027-03-01",
+      "status": "TENTATIVE",
+      "description": "Expected February event; placeholder until CIG confirms."
+    },
+    {
+      "title": "Stella Fortuna 2957",
+      "start": "2027-03-01",
+      "end": "2027-04-01",
+      "status": "TENTATIVE",
+      "description": "Expected March event; placeholder until CIG confirms."
+    },
+    {
+      "title": "Invictus Launch Week / DefenseCon 2957",
+      "start": "2027-05-15",
+      "end": "2027-05-29",
+      "status": "TENTATIVE",
+      "description": "Expected May event window; update when CIG confirms."
+    },
+    {
+      "title": "Alien Week 2957",
+      "start": "2027-06-12",
+      "end": "2027-06-21",
+      "status": "TENTATIVE",
+      "description": "Expected June event window; update when CIG confirms."
+    },
+    {
+      "title": "Foundation Festival 2957",
+      "start": "2027-07-01",
+      "end": "2027-08-01",
+      "status": "TENTATIVE",
+      "description": "Expected July event; placeholder until CIG confirms."
+    },
+    {
+      "title": "Ship Showdown 2957",
+      "start": "2027-08-01",
+      "end": "2027-09-01",
+      "status": "TENTATIVE",
+      "description": "Expected August event; placeholder until CIG confirms."
+    },
+    {
+      "title": "Pirate Week 2957",
+      "start": "2027-09-09",
+      "end": "2027-09-29",
+      "status": "TENTATIVE",
+      "description": "Expected September event window; update when CIG confirms."
+    },
+    {
+      "title": "Day of the Vara 2957",
+      "start": "2027-10-01",
+      "end": "2027-11-01",
+      "status": "TENTATIVE",
+      "description": "Expected October event; placeholder until CIG confirms."
+    },
+    {
+      "title": "IAE 2957",
+      "start": "2027-11-19",
+      "end": "2027-12-03",
+      "status": "TENTATIVE",
+      "description": "Expected late-November event window; update when CIG confirms."
+    },
+    {
+      "title": "Luminalia 2957",
+      "start": "2027-12-22",
+      "end": "2027-12-23",
+      "status": "ANNUAL",
+      "description": "Luminalia is canonically celebrated December 22; CIG activities may span additional dates."
+    }
   ]
 }

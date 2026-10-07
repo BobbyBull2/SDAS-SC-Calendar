@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -59,7 +59,7 @@ for e in discord_events:
     if not e.get("id") or not e.get("start"):
         continue
     start=utc_ics(e["start"])
-    end=utc_ics(e["end"]) if e.get("end") else start
+    end=utc_ics(e["end"]) if e.get("end") else (datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(timezone.utc) + timedelta(hours=4)).strftime("%Y%m%dT%H%M%SZ")
     desc=e.get("description") or "SDAS Discord Scheduled Event"
     source=e.get("source")
     if source:

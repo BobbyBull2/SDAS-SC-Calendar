@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -26,6 +27,10 @@ def ymd(value):
 def utc_ics(value):
     dt=datetime.fromisoformat(value.replace("Z","+00:00"))
     return dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+def local_ics(value):
+    dt=datetime.fromisoformat(value.replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
+    return dt.strftime("%Y%m%dT%H%M%S")
 
 def discord_rrule(rule):
     if not rule:
@@ -121,8 +126,12 @@ for e in pipeline_events:
 for e in discord_events:
     if not e.get("id") or not e.get("start"):
         continue
-    start=utc_ics(e["start"])
-    end=utc_ics(e["end"]) if e.get("end") else (datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(timezone.utc) + timedelta(hours=4)).strftime("%Y%m%dT%H%M%SZ")
+    start=local_ics(e["start"])
+    if e.get("end"):
+        end=local_ics(e["end"])
+    else:
+        local_start=datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
+        end=(local_start + timedelta(hours=4)).strftime("%Y%m%dT%H%M%S")
     source=e.get("source")
     desc_parts=["SDAS Discord Scheduled Event"]
     if e.get("description"):
@@ -133,7 +142,7 @@ for e in discord_events:
         desc_parts += ["", "View event in Discord: "+source]
     desc="\n".join(desc_parts)
     lines += ["BEGIN:VEVENT",f'UID:discord-{e["id"]}@sdas-star-citizen',f"DTSTAMP:{stamp}",
-              f"DTSTART:{start}",f"DTEND:{end}",
+              f"DTSTART;TZID=America/Chicago:{start}",f"DTEND;TZID=America/Chicago:{end}",
               f'SUMMARY:{esc("[SDAS] "+e.get("title","SDAS Event"))}',
               f"DESCRIPTION:{esc(desc)}"]
     recurrence=discord_rrule(e.get("recurrence_rule"))

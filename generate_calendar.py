@@ -39,7 +39,9 @@ def discord_rrule(rule):
     if interval != 1:
         parts.append(f"INTERVAL={interval}")
     weekdays=rule.get("by_weekday") or []
-    if weekdays:
+    # For simple weekly recurrence, DTSTART is the safest cross-calendar anchor.
+    # Omitting BYDAY avoids UTC/local weekday splits (e.g. Wed evening CDT = Thu UTC).
+    if weekdays and freq != "WEEKLY":
         days=[day_map[d] for d in weekdays if d in day_map]
         if days:
             parts.append("BYDAY="+",".join(days))

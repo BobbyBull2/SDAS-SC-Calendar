@@ -7,6 +7,7 @@ on:
       - events.json
       - generate_calendar.py
       - fetch_discord_events.py
+      - fetch_pipeline_candidates.py
       - .github/workflows/update-calendar.yml
   push:
     branches: [main]
@@ -14,6 +15,7 @@ on:
       - events.json
       - generate_calendar.py
       - fetch_discord_events.py
+      - fetch_pipeline_candidates.py
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
@@ -43,6 +45,13 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_GUILD_ID: "1518410019249459236"
         run: python fetch_discord_events.py
+
+      - name: Classify PIPELINE game-news
+        if: github.event_name != 'pull_request'
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_GAME_NEWS_CHANNEL_ID: "1519103965290168560"
+        run: python fetch_pipeline_candidates.py
 
       - name: Generate calendar
         run: python generate_calendar.py

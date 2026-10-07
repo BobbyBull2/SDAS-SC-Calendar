@@ -126,12 +126,7 @@ for e in pipeline_events:
 for e in discord_events:
     if not e.get("id") or not e.get("start"):
         continue
-    start=local_ics(e["start"])
-    if e.get("end"):
-        end=local_ics(e["end"])
-    else:
-        local_start=datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
-        end=(local_start + timedelta(hours=4)).strftime("%Y%m%dT%H%M%S")
+
     source=e.get("source")
     desc_parts=["SDAS Discord Scheduled Event"]
     if e.get("description"):
@@ -141,11 +136,49 @@ for e in discord_events:
     if source:
         desc_parts += ["", "View event in Discord: "+source]
     desc="\n".join(desc_parts)
+
+    local_start=datetime.fromisoformat(e["start"].replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
+    if e.get("end"):
+        local_end=datetime.fromisoformat(e["end"].replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
+    else:
+        local_end=local_start+timedelta(hours=4)
+    duration=local_end-local_start
+
+    rule=e.get("recurrence_rule") or {}
+    # Materialize weekly Discord series as concrete events for maximum Google/Apple compatibility.
+    # This avoids client-specific RRULE/TZID expansion issues while preserving local wall-clock time across DST.
+    if rule.get("frequency")==2:
+        interval=rule.get("interval") or 1
+        count=rule.get("count") or 52
+        count=min(int(count),52)
+        rule_end=None
+        if rule.get("end"):
+            rule_end=datetime.fromisoformat(rule["end"].replace("Z","+00:00")).astimezone(ZoneInfo("America/Chicago"))
+        for n in range(count):
+            occ_start=local_start+timedelta(weeks=n*interval)
+            if rule_end and occ_start>rule_end:
+                break
+            occ_end=occ_start+duration
+            start_utc=occ_start.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+            end_utc=occ_end.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+            lines += ["BEGIN:VEVENT",f'UID:discord-{e["id"]}-{n}@sdas-star-citizen',f"DTSTAMP:{stamp}",
+                      f"DTSTART:{start_utc}",f"DTEND:{end_utc}",
+                      f'SUMMARY:{esc("[SDAS] "+e.get("title","SDAS Event"))}',
+                      f"DESCRIPTION:{esc(desc)}"]
+            if e.get("location"):
+                lines.append(f'LOCATION:{esc(e["location"])}')
+            if source:
+                lines.append(f"URL:{source}")
+            lines += ["TRANSP:TRANSPARENT","END:VEVENT"]
+        continue
+
+    start_utc=local_start.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    end_utc=local_end.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines += ["BEGIN:VEVENT",f'UID:discord-{e["id"]}@sdas-star-citizen',f"DTSTAMP:{stamp}",
-              f"DTSTART;TZID=America/Chicago:{start}",f"DTEND;TZID=America/Chicago:{end}",
+              f"DTSTART:{start_utc}",f"DTEND:{end_utc}",
               f'SUMMARY:{esc("[SDAS] "+e.get("title","SDAS Event"))}',
               f"DESCRIPTION:{esc(desc)}"]
-    recurrence=discord_rrule(e.get("recurrence_rule"))
+    recurrence=discord_rrule(rule)
     if recurrence:
         lines.append(f"RRULE:{recurrence}")
     if e.get("location"):

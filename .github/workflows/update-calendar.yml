@@ -15,7 +15,7 @@ on:
       - generate_calendar.py
       - fetch_discord_events.py
   schedule:
-    - cron: "17 10 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:

@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "events.json"
 DISCORD_DATA = ROOT / "discord-events.json"
+PIPELINE_DATA = ROOT / "pipeline-candidates.json"
 OUT = ROOT / "star-citizen-events.ics"
 
 def esc(s):
@@ -67,6 +68,9 @@ events=data["events"]
 discord_events=[]
 if DISCORD_DATA.exists():
     discord_events=json.loads(DISCORD_DATA.read_text(encoding="utf-8")).get("events", [])
+pipeline_events=[]
+if PIPELINE_DATA.exists():
+    pipeline_events=json.loads(PIPELINE_DATA.read_text(encoding="utf-8")).get("published", [])
 
 stamp="20261005T180000Z"
 lines=[
@@ -90,6 +94,29 @@ for e in events:
               f'DTSTART;VALUE=DATE:{ymd(e["start"])}',f'DTEND;VALUE=DATE:{ymd(e["end"])}',
               f"SUMMARY:{esc(summary)}",f'DESCRIPTION:{esc(e["status"]+" — "+e["description"])}',
               "TRANSP:TRANSPARENT","END:VEVENT"]
+
+for e in pipeline_events:
+    dates=e.get("dates") or []
+    if not dates or not e.get("stable_key"):
+        continue
+    start=dates[0]
+    end=(datetime.fromisoformat(start)+timedelta(days=1)).date().isoformat()
+    cls=e.get("classification","EVENT_REVIEW")
+    prefix="[PTU]" if "PTU" in cls else ("[PATCH]" if "LIVE" in cls else "[CIG]")
+    key=e["stable_key"]
+    title=key.replace("-"," ").title()
+    if key.startswith("patch-"):
+        parts=key.split("-")
+        version=parts[1]
+        title=f"Star Citizen {version} "+("PTU" if parts[-1]=="ptu" else "LIVE")
+    source=e.get("official_rsi_source") or e.get("discord_source")
+    desc="CIG/PIPELINE dated announcement"
+    if source: desc += "\\nSource: "+source
+    lines += ["BEGIN:VEVENT",f"UID:pipeline-{key}@sdas-star-citizen",f"DTSTAMP:{stamp}",
+              f"DTSTART;VALUE=DATE:{ymd(start)}",f"DTEND;VALUE=DATE:{ymd(end)}",
+              f"SUMMARY:{esc(prefix+' '+title)}",f"DESCRIPTION:{esc(desc)}"]
+    if source: lines.append(f"URL:{source}")
+    lines += ["TRANSP:TRANSPARENT","END:VEVENT"]
 
 for e in discord_events:
     if not e.get("id") or not e.get("start"):
@@ -120,4 +147,4 @@ for e in discord_events:
 
 lines.append("END:VCALENDAR")
 OUT.write_text("\r\n".join(fold(x) for x in lines)+"\r\n",encoding="utf-8",newline="")
-print(f"Generated {OUT.name}: {len(events)} CIG/RSI + {len(discord_events)} SDAS Discord events")
+print(f"Generated {OUT.name}: {len(events)} CIG/RSI + {len(pipeline_events)} dated PIPELINE + {len(discord_events)} SDAS Discord events")

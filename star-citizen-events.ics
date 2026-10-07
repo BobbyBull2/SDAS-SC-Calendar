@@ -191,7 +191,7 @@ BEGIN:VEVENT
 UID:discord-1544483191786578031@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261009T000000Z
-DTEND:20261009T000000Z
+DTEND:20261009T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:Come join us in a massive resource mining extravaganza to sup
  ply the org with mats. These mats will then be refined and used to craft
@@ -205,7 +205,7 @@ BEGIN:VEVENT
 UID:discord-1548466884045705350@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261008T003000Z
-DTEND:20261008T003000Z
+DTEND:20261008T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:Meet at Gaslight to battle the Valakkar. This is a weekly eve
  nt to help people get parts for Wikelo.\nhttps://discord.com/events/1518

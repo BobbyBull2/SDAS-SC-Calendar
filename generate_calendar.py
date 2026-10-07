@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "events.json"
+DISCORD_DATA = ROOT / "discord-events.json"
 OUT = ROOT / "star-citizen-events.ics"
 
 def esc(s):
@@ -20,8 +22,16 @@ def fold(line, limit=73):
 def ymd(value):
     return value.replace("-","")
 
+def utc_ics(value):
+    dt=datetime.fromisoformat(value.replace("Z","+00:00"))
+    return dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
 data=json.loads(DATA.read_text(encoding="utf-8"))
 events=data["events"]
+discord_events=[]
+if DISCORD_DATA.exists():
+    discord_events=json.loads(DISCORD_DATA.read_text(encoding="utf-8")).get("events", [])
+
 stamp="20261005T180000Z"
 lines=[
 "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//SDAS//Star Citizen Events//EN",
@@ -44,6 +54,26 @@ for e in events:
               f'DTSTART;VALUE=DATE:{ymd(e["start"])}',f'DTEND;VALUE=DATE:{ymd(e["end"])}',
               f"SUMMARY:{esc(summary)}",f'DESCRIPTION:{esc(e["status"]+" — "+e["description"])}',
               "TRANSP:TRANSPARENT","END:VEVENT"]
+
+for e in discord_events:
+    if not e.get("id") or not e.get("start"):
+        continue
+    start=utc_ics(e["start"])
+    end=utc_ics(e["end"]) if e.get("end") else start
+    desc=e.get("description") or "SDAS Discord Scheduled Event"
+    source=e.get("source")
+    if source:
+        desc += "\n" + source
+    lines += ["BEGIN:VEVENT",f'UID:discord-{e["id"]}@sdas-star-citizen',f"DTSTAMP:{stamp}",
+              f"DTSTART:{start}",f"DTEND:{end}",
+              f'SUMMARY:{esc("[SDAS] "+e.get("title","SDAS Event"))}',
+              f"DESCRIPTION:{esc(desc)}"]
+    if e.get("location"):
+        lines.append(f'LOCATION:{esc(e["location"])}')
+    if source:
+        lines.append(f"URL:{source}")
+    lines += ["TRANSP:TRANSPARENT","END:VEVENT"]
+
 lines.append("END:VCALENDAR")
 OUT.write_text("\r\n".join(fold(x) for x in lines)+"\r\n",encoding="utf-8",newline="")
-print(f"Generated {OUT.name}: {len(events)} events")
+print(f"Generated {OUT.name}: {len(events)} CIG/RSI + {len(discord_events)} SDAS Discord events")

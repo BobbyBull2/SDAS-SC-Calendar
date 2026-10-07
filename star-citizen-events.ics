@@ -187,4 +187,30 @@ DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
  G activities may span additional dates.
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:discord-1544483191786578031@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART:20261009T000000Z
+DTEND:20261009T000000Z
+SUMMARY:[SDAS] Org Mining Event
+DESCRIPTION:Come join us in a massive resource mining extravaganza to sup
+ ply the org with mats. These mats will then be refined and used to craft
+  you beautiful dudes new equipment and components. This will be a new we
+ ekly event!\nhttps://discord.com/events/1518410019249459236/154448319178
+ 6578031
+URL:https://discord.com/events/1518410019249459236/1544483191786578031
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:discord-1548466884045705350@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART:20261008T003000Z
+DTEND:20261008T003000Z
+SUMMARY:[SDAS] Worm Wednesday
+DESCRIPTION:Meet at Gaslight to battle the Valakkar. This is a weekly eve
+ nt to help people get parts for Wikelo.\nhttps://discord.com/events/1518
+ 410019249459236/1548466884045705350
+URL:https://discord.com/events/1518410019249459236/1548466884045705350
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

@@ -39,7 +39,14 @@ def classify(text):
     if "#star-citizen-leaks" in s or "leak" in s: return "IGNORE_LEAK"
     if "potential" in s or "possibly" in s or "expected" in s: return "EXPECTED"
     if "patch notes" in s and ("ptu" in s or "eptu" in s): return "PTU_CONFIRMED"
-    if "live" in s and ("patch" in s or "release" in s): return "LIVE_CONFIRMED"
+    live_confirmed=(
+        "now live" in s or
+        "is now live" in s or
+        "released to live" in s or
+        "live patch notes" in s or
+        "live release notes" in s
+    )
+    if live_confirmed and ("patch" in s or "release" in s): return "LIVE_CONFIRMED"
     if any(x in s for x in ("free fly","iae","invictus","alien week","pirate week","luminalia","day of the vara")): return "EVENT_REVIEW"
     return "IGNORE_NEWS"
 

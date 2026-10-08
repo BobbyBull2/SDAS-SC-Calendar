@@ -187,19 +187,6 @@ DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pipeline-patch-4.10.2-live@sdas-star-citizen
-DTSTAMP:20261005T180000Z
-DTSTART;VALUE=DATE:20261005
-DTEND;VALUE=DATE:20261006
-SUMMARY:[PATCH] Star Citizen 4.10.2 LIVE
-DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://robertsspac
- eindustries.com/en/comm-link/transmission/21352-This-Week-In-Star-Citize
- n
-URL:https://robertsspaceindustries.com/en/comm-link/transmission/21352-Th
- is-Week-In-Star-Citizen
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:discord-1544483191786578031-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261009T000000Z

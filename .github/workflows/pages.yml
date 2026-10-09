@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - index.html
+      - screenshot-gallery/**
       - .github/workflows/pages.yml
   workflow_dispatch:
 

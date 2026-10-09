@@ -7,13 +7,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: approved-sdas-gallery
+  group: pages
   cancel-in-progress: false
 
 jobs:
   publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -54,3 +59,17 @@ jobs:
           git commit -m "Refresh reaction-approved SDAS screenshot gallery (max 25)"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      # Actions pushes using GITHUB_TOKEN do not trigger pages.yml.
+      # Deploy here as part of the same workflow so the public URL stays current.
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload site including approved gallery
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy published gallery to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -17,22 +17,21 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;ba
 .kicker{letter-spacing:.34em;color:var(--cyan);font-size:.78rem;font-weight:800;text-transform:uppercase}
 h1{font-size:clamp(2.2rem,7vw,5.6rem);line-height:.9;margin:12px 0 10px;letter-spacing:.02em}.outline{color:transparent;-webkit-text-stroke:1px var(--cyan2)}
 .sub{font-size:clamp(1rem,2.3vw,1.35rem);color:#c8dbe6;max-width:720px;line-height:1.55}
-.smart{margin-top:26px;display:inline-flex;align-items:center;gap:12px;background:linear-gradient(90deg,#1bbfea,#67e1ff);color:#031018;text-decoration:none;font-weight:900;letter-spacing:.04em;padding:17px 23px;border-radius:12px;box-shadow:var(--glow);border:0;cursor:pointer;font-size:1rem}
+.smart{margin-top:0;justify-content:center;display:inline-flex;align-items:center;gap:12px;background:linear-gradient(90deg,#1bbfea,#67e1ff);color:#031018;text-decoration:none;font-weight:900;letter-spacing:.04em;padding:17px 23px;border-radius:12px;box-shadow:var(--glow);border:0;cursor:pointer;font-size:1rem}
 .smart:hover{transform:translateY(-1px)}
+.smart:focus-visible{outline:2px solid white;outline-offset:4px}
+.calendar-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}
 .hint{margin:12px 0 0;color:var(--muted);font-size:.9rem}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
 .card{position:relative;background:linear-gradient(180deg,rgba(10,29,41,.96),rgba(5,16,24,.96));border:1px solid var(--line);border-radius:16px;padding:22px;min-height:170px}
 .card h3{margin:10px 0 7px}.card p{margin:0;color:var(--muted);line-height:1.45}.icon{font-size:1.7rem}
-.platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
-.platform{appearance:none;border:1px solid #21516b;border-radius:14px;background:#081824;color:var(--text);padding:20px;text-align:left;cursor:pointer;font:inherit}
-.platform strong{display:block;font-size:1.05rem;margin-bottom:4px}.platform span{color:var(--muted);font-size:.88rem}.platform:hover{border-color:var(--cyan);box-shadow:var(--glow)}
 .section{margin-top:30px}.section h2{font-size:1rem;letter-spacing:.22em;color:var(--cyan);text-transform:uppercase}
 .note{border-left:3px solid var(--cyan);background:rgba(72,215,255,.07);padding:14px 16px;color:#cfe6f2;border-radius:8px}
 .urlbox{display:flex;gap:8px;align-items:center;background:#030a0f;border:1px solid #173547;border-radius:10px;padding:10px}
 .urlbox code{overflow:auto;white-space:nowrap;color:#aeefff;flex:1}.copy{border:1px solid #28607b;background:#0a2230;color:#fff;border-radius:8px;padding:9px 12px;cursor:pointer}
 .footer{margin-top:30px;color:#6f8a98;font-size:.83rem;text-align:center}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.badge{border:1px solid #20556f;border-radius:999px;padding:7px 10px;font-size:.78rem;color:#bfeeff;background:rgba(72,215,255,.05)}
-@media(max-width:760px){.hero-inner{padding:28px 22px}.grid,.platforms{grid-template-columns:1fr}.smart{width:100%;justify-content:center}.wrap{padding-top:18px}}
+@media(max-width:760px){.hero-inner{padding:28px 22px}.grid,.calendar-links{grid-template-columns:1fr}.smart{width:100%;justify-content:center}.wrap{padding-top:18px}}
 </style>
 </head>
 <body>
@@ -43,8 +42,12 @@ h1{font-size:clamp(2.2rem,7vw,5.6rem);line-height:.9;margin:12px 0 10px;letter-s
     <h1>SDAS <span class="outline">STAR CITIZEN</span><br>CALENDAR</h1>
     <div class="sub">One calendar for SDAS org events, weekly activities, CIG dates, LIVE patches, PTU updates and other dated Star Citizen announcements.</div>
     <div class="badges"><span class="badge">[SDAS] Org Events</span><span class="badge">[PATCH] LIVE</span><span class="badge">[PTU] Test Universe</span><span class="badge">Automatic Updates</span></div>
-    <button id="smartAdd" class="smart">＋ ADD SDAS CALENDAR</button>
-    <div id="smartHint" class="hint">We’ll open the best subscription option for this device.</div>
+    <nav class="calendar-links" aria-label="Subscribe to the SDAS calendar">
+      <a id="apple" class="smart" href="webcal://raw.githubusercontent.com/BobbyBull2/SDAS-SC-Calendar/main/star-citizen-events.ics">Apple Calendar</a>
+      <a id="google" class="smart" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fraw.githubusercontent.com%2FBobbyBull2%2FSDAS-SC-Calendar%2Fmain%2Fstar-citizen-events.ics">Google Calendar</a>
+      <a id="outlook" class="smart" href="https://outlook.live.com/calendar/0/addcalendar">Outlook Calendar</a>
+    </nav>
+    <p class="hint">Choose your calendar to subscribe. For Outlook, we’ll copy the feed URL; choose “Subscribe from web” and paste it. You can also copy it below.</p>
   </div>
 </section>
 
@@ -52,15 +55,6 @@ h1{font-size:clamp(2.2rem,7vw,5.6rem);line-height:.9;margin:12px 0 10px;letter-s
   <div class="card"><div class="icon">👥</div><h3>Org Events</h3><p>Worm Wednesday, Org Mining and other SDAS Discord scheduled events are included automatically.</p></div>
   <div class="card"><div class="icon">🚀</div><h3>CIG + PIPELINE</h3><p>Dated patch, PTU and major Star Citizen announcements can be added and updated as dates change.</p></div>
   <div class="card"><div class="icon">🔄</div><h3>Stay Synced</h3><p>Subscribe once. The calendar feed keeps updating without downloading a new file every time.</p></div>
-</section>
-
-<section class="section">
-  <h2>Choose your calendar</h2>
-  <div class="platforms">
-    <button class="platform" id="apple"><strong> Apple Calendar</strong><span>One tap subscription on iPhone, iPad and Mac</span></button>
-    <button class="platform" id="google"><strong>Google Calendar</strong><span>Open Google’s subscription flow</span></button>
-    <button class="platform" id="outlook"><strong>Outlook</strong><span>Copy the feed and open Subscribe from web</span></button>
-  </div>
 </section>
 
 <section class="section">
@@ -73,15 +67,6 @@ h1{font-size:clamp(2.2rem,7vw,5.6rem);line-height:.9;margin:12px 0 10px;letter-s
 </main>
 <script>
 const ICS='https://raw.githubusercontent.com/BobbyBull2/SDAS-SC-Calendar/main/star-citizen-events.ics';
-const WEBCAL=ICS.replace(/^https:/,'webcal:');
-const GOOGLE='https://calendar.google.com/calendar/render?cid='+encodeURIComponent(WEBCAL);
-const OUTLOOK='https://outlook.live.com/calendar/0/addcalendar';
-const ua=navigator.userAgent||'';
-const isiOS=/iPhone|iPad|iPod/i.test(ua);
-const isMac=/Macintosh|Mac OS X/i.test(ua);
-const isAndroid=/Android/i.test(ua);
-const isWindows=/Windows/i.test(ua);
-
 document.getElementById('feedUrl').textContent=ICS;
 
 async function copyFeed(){
@@ -89,27 +74,14 @@ async function copyFeed(){
   catch(e){prompt('Copy this calendar feed:',ICS);}
 }
 document.getElementById('copy').onclick=copyFeed;
-document.getElementById('apple').onclick=()=>{location.href=WEBCAL;};
-document.getElementById('google').onclick=()=>{location.href=GOOGLE;};
-document.getElementById('outlook').onclick=async()=>{await copyFeed();location.href=OUTLOOK;};
-
-const smart=document.getElementById('smartAdd');
-const hint=document.getElementById('smartHint');
-if(isiOS||isMac){
-  smart.textContent=' ADD TO APPLE CALENDAR';
-  hint.textContent='Tap once, then confirm Subscribe in Calendar.';
-  smart.onclick=()=>location.href=WEBCAL;
-}else if(isAndroid){
-  smart.textContent='ADD TO GOOGLE CALENDAR';
-  hint.textContent='Opens Google Calendar subscription. If the app does not add it, use the Google button from a desktop browser.';
-  smart.onclick=()=>location.href=GOOGLE;
-}else if(isWindows){
-  smart.textContent='ADD TO OUTLOOK / CALENDAR';
-  hint.textContent='The feed is copied automatically and Outlook Subscribe from web will open.';
-  smart.onclick=async()=>{await copyFeed();location.href=OUTLOOK;};
-}else{
-  smart.onclick=()=>document.querySelector('.platforms').scrollIntoView({behavior:'smooth'});
-}
+document.getElementById('outlook').addEventListener('click',async event=>{
+  // Preserve ordinary open-in-new-tab behavior; the manual Copy option remains.
+  if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;
+  event.preventDefault();
+  const destination=event.currentTarget.href;
+  await copyFeed();
+  location.href=destination;
+});
 </script>
 </body>
 </html>

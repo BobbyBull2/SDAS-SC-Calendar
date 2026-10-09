@@ -176,8 +176,8 @@ def select_images(candidates):
     return sorted(candidates, key=order, reverse=True)[:25]
 
 
-def sync(api, destination, allowed, max_pages=1000, include_provisional=False):
-    if not allowed and not include_provisional:
+def sync(api, destination, allowed, max_pages=1000, include_provisional=False, reaction_is_approval=False):
+    if not allowed and not include_provisional and not reaction_is_approval:
         raise DiagnosticError('Verified mode requires SDAS_APPROVER_IDS; use explicit provisional mode for local review')
     if destination.exists():
         raise DiagnosticError('Output already exists; choose a new bundle directory')
@@ -197,8 +197,8 @@ def sync(api, destination, allowed, max_pages=1000, include_provisional=False):
             continue
         reaction_messages += 1
         mid = snowflake(message['id'])
-        verified = approving_users(api, mid, allowed)
-        if not verified and not include_provisional:
+        verified = [] if reaction_is_approval else approving_users(api, mid, allowed)
+        if not verified and not include_provisional and not reaction_is_approval:
             continue
         for attachment in attachments:
             candidates.append({'messageId': mid, 'attachmentId': snowflake(attachment['id']),
@@ -222,27 +222,28 @@ def sync(api, destination, allowed, max_pages=1000, include_provisional=False):
             (stage / 'images' / filename).write_bytes(pixels)
             items.append({'id': f'{mid}-{aid}', 'file': 'images/' + filename,
                 'sha256': digest, 'width': width, 'height': height,
-                'approval': 'officer-verified' if verified else 'provisional',
+                'approval': 'reaction-approved' if reaction_is_approval else ('officer-verified' if verified else 'provisional'),
                 'verifiedApproverIds': verified, 'messageTimestamp': candidate['messageTimestamp'],
                 'approvedAt': candidate['approvedAt'], 'sortBasis': 'discord-message-time',
                 'title': 'From the SDAS crew', 'alt': 'Community screenshot shared in the SDAS Discord.'})
         manifest = {'schemaVersion': 1, 'generatedAt': datetime.now(timezone.utc).isoformat(),
             'guildId': GUILD, 'channelId': CHANNEL, 'emojiId': EMOJI,
-            'publicationApproved': False, 'completeHistory': True, 'galleryLimit': 25,
-            'mode': 'provisional-review' if include_provisional else 'verified-only',
+            'publicationApproved': reaction_is_approval, 'completeHistory': True, 'galleryLimit': 25,
+            'mode': 'reaction-approved-production' if reaction_is_approval else ('provisional-review' if include_provisional else 'verified-only'),
             'qualifyingImages': len(candidates),
             'messagesInspected': inspected, 'reactionMatchedMessages': reaction_messages,
             'images': items}
         (stage / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
         stage.rename(destination)
     api.report(messages_inspected=inspected, images_saved=len(items), qualifying_images=len(candidates),
-        officer_verified=sum(i['approval'] == 'officer-verified' for i in items), publication_approved=False)
+        officer_verified=sum(i['approval'] == 'officer-verified' for i in items), publication_approved=reaction_is_approval)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--include-provisional', action='store_true', help='Local review only; include unverified reaction matches')
+    parser.add_argument('--reaction-is-approval', action='store_true', help='SDAS-authorized exact custom emoji reaction is final publication approval')
     parser.add_argument('--max-pages', type=int, default=1000)
     args = parser.parse_args()
     token = os.environ.get('DISCORD_BOT_TOKEN', '').strip()
@@ -254,7 +255,9 @@ def main():
         allowed = {snowflake(v.strip()) for v in os.environ.get('SDAS_APPROVER_IDS', '').split(',') if v.strip()}
         if args.max_pages < 1:
             raise DiagnosticError('max-pages must be positive')
-        sync(api, args.output, allowed, args.max_pages, args.include_provisional)
+        if args.reaction_is_approval and args.include_provisional:
+            raise DiagnosticError('Production and provisional modes cannot be combined')
+        sync(api, args.output, allowed, args.max_pages, args.include_provisional, args.reaction_is_approval)
     except Exception as error:
         api.report(result='FAILED; no complete bundle produced', error_type=type(error).__name__,
             error=str(error) if isinstance(error, DiagnosticError) else 'Details omitted to protect credentials and attachment URLs')

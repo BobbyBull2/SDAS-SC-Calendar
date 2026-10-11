@@ -143,7 +143,7 @@ def main():
     try:
         output = collect(token, channel_id, date_utc(start_at))
     except (ValueError, RuntimeError, urllib.error.URLError, OSError) as error:
-        print(f"News feed preserved; sync failed: {type(error).__name__}", file=sys.stderr)
+        print(f"News feed preserved; sync failed: {type(error).__name__}: {str(error) if isinstance(error, ValueError) else 'Discord transport/API failure'}", file=sys.stderr)
         return 1
     dest = Path(__file__).resolve().parent.parent / "org-news" / "feed.json"
     dest.parent.mkdir(parents=True, exist_ok=True)

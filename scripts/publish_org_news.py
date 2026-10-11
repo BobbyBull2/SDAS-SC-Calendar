@@ -47,7 +47,7 @@ def select_posts(messages, channel_id, started_at):
     selected = []
     seen = set()
     for msg in messages:
-        if not isinstance(msg, dict) or msg.get("type") not in (0, 19):
+        if not isinstance(msg, dict) or msg.get("type") != 0:
             continue
         mid = str(msg.get("id", ""))
         if not CHANNEL_ID_RE.fullmatch(mid) or mid in seen:

@@ -1,6 +1,12 @@
 name: Publish SDAS Org News (disabled until approved)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-org-news.yml
+      - scripts/publish_org_news.py
+      - tests/test_org_news.py
   schedule:
     - cron: '47 * * * *'
   workflow_dispatch:

@@ -16,6 +16,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 GUILD_ID = "1518410019249459236"
+APPROVED_CHANNEL_ID = "1519103863758520471"
 API = "https://discord.com/api/v10"
 MAX_ITEMS = 12
 MAX_PAGES = 5
@@ -101,8 +102,8 @@ def fetch_json(path, token):
     raise RuntimeError("Discord request could not be completed")
 
 def collect(token, channel_id, started_at, getter=fetch_json):
-    if not CHANNEL_ID_RE.fullmatch(channel_id):
-        raise ValueError("A valid #org-news channel ID is required")
+    if not CHANNEL_ID_RE.fullmatch(channel_id) or channel_id != APPROVED_CHANNEL_ID:
+        raise ValueError("Channel ID does not match the approved SDAS #org-news channel")
     channel = getter(f"/channels/{channel_id}", token)
     if (channel.get("guild_id") != GUILD_ID or
         channel.get("name") != "org-news" or channel.get("type") not in (0, 5)):

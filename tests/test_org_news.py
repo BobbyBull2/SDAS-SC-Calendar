@@ -7,7 +7,7 @@ spec = importlib.util.spec_from_file_location("orgnews", Path(__file__).resolve(
 news = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(news)
 
-CHANNEL = "1519105573067686000"
+CHANNEL = "1519103863758520471"
 GUILD = "1518410019249459236"
 START = datetime(2026, 10, 11, tzinfo=timezone.utc)
 
@@ -26,6 +26,10 @@ class NewsTests(unittest.TestCase):
             return {"guild_id": GUILD, "name": "general", "type": 0}
         with self.assertRaises(ValueError):
             news.collect("test", CHANNEL, START, getter=getter)
+
+    def test_unapproved_channel_id_rejected(self):
+        with self.assertRaisesRegex(ValueError, "approved SDAS"):
+            news.collect("test", "1519103965290168560", START, getter=lambda path, token: [])
 
     def test_plain_text_normalized(self):
         items = news.select_posts([msg("1558000000000000001", "# Org announcement\nHello everyone")], CHANNEL, START)

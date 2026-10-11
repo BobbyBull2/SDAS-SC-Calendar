@@ -2,6 +2,8 @@
 
 **Status: PREPARED, NOT ENABLED. No Discord messages are published by this proposal.**
 
+Confirmed Discord `#org-news` channel ID: `1519103863758520471`. The previously provided `1519103965290168560` is the existing Pipeline/game-news channel and is **not** authorized for this feed. The collector refuses any other channel ID.
+
 ## Planned behavior
 - Reuses the existing Discord bot token secret in this Calendar repository.
 - Runs every hour, reads only the single channel named `org-news` in the official SDAS guild.
@@ -14,14 +16,14 @@
 
 ## Activation requires approval by an org officer
 1. Confirm that posts to `#org-news` are explicitly intended for public display on SDAS.space.
-2. Copy the channel ID from Discord Developer Mode (right-click or long-press the channel -> Copy Channel ID).
+2. Use confirmed channel ID `1519103863758520471` (runtime verifies channel name `org-news` and SDAS guild).
 3. Note which authors can post. This prototype excludes bot/webhook messages by design.
 4. Decide a UTC start timestamp **after** announcement/author consent, e.g. `2026-10-12T00:00:00Z` (example only).
 5. Review the publishing and removal policy before enabling.
 
 Then merge the draft PR and configure GitHub **repository variables** in `BobbyBull2/SDAS-SC-Calendar` > Settings > Secrets and variables > Actions > Variables:
 
-- `SDAS_ORG_NEWS_CHANNEL_ID`: approved Discord channel ID, verified at runtime.
+- `SDAS_ORG_NEWS_CHANNEL_ID`: `1519103863758520471` (exact, enforced at runtime).
 - `SDAS_ORG_NEWS_START_AT`: the approved publication cutoff ISO 8601 UTC timestamp.
 - `SDAS_ORG_NEWS_PUBLIC_ENABLED`: `true` only after the above approvals; unset or `false` to stop the workflow.
 

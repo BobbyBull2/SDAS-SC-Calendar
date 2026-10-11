@@ -105,9 +105,11 @@ def collect(token, channel_id, started_at, getter=fetch_json):
     if not CHANNEL_ID_RE.fullmatch(channel_id) or channel_id != APPROVED_CHANNEL_ID:
         raise ValueError("Channel ID does not match the approved SDAS #org-news channel")
     channel = getter(f"/channels/{channel_id}", token)
-    if (channel.get("guild_id") != GUILD_ID or
-        channel.get("name") != "org-news" or channel.get("type") not in (0, 5)):
-        raise ValueError("Channel does not match the approved SDAS #org-news text channel")
+    if channel.get("guild_id") != GUILD_ID:
+        raise ValueError("Channel is not in the approved SDAS Discord server")
+    if channel.get("type") not in (0, 5):
+        raise ValueError("Approved Discord channel is not a supported text/announcement channel")
+    # The exact approved channel ID is pinned above. A cosmetic Discord rename is okay.
     messages, cursor, seen = [], None, set()
     for _ in range(MAX_PAGES):
         path = f"/channels/{channel_id}/messages?limit=100"

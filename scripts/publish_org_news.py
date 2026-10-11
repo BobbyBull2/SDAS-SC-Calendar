@@ -4,6 +4,8 @@
 This collector is intentionally inert unless the guarded GitHub workflow is enabled
 with the approved channel ID and publication switch.
 """
+import hashlib
+import io
 import json
 import os
 from pathlib import Path
@@ -12,18 +14,119 @@ import sys
 import tempfile
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
+import warnings
+from PIL import Image, ImageOps
 from datetime import datetime, timezone, timedelta
 
 GUILD_ID = "1518410019249459236"
 APPROVED_CHANNEL_ID = "1519103863758520471"
 API = "https://discord.com/api/v10"
-MAX_ITEMS = 100
+MAX_ITEMS = 10
 MAX_PAGES = 100
 CHANNEL_ID_RE = re.compile(r"^[0-9]{17,20}$")
 USER_MENTION = re.compile(r"<@!?[0-9]{17,20}>")
 ROLE_MENTION = re.compile(r"<@&[0-9]{17,20}>")
 CHANNEL_MENTION = re.compile(r"<#[0-9]{17,20}>")
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp"}
+MAX_IMAGE_BYTES = 10 * 1024 * 1024
+IMAGE_HOSTS = {"cdn.discordapp.com", "media.discordapp.net"}
+PUBLIC_IMAGE_ROOT = "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/"
+Image.MAX_IMAGE_PIXELS = 25_000_000
+warnings.simplefilter("error", Image.DecompressionBombWarning)
+
+class NoRedirects(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+def safe_image_url(value):
+    """Accept only Discord-owned attachment or image-proxy HTTPS URLs."""
+    if not isinstance(value, str):
+        return False
+    try:
+        p = urllib.parse.urlsplit(value)
+        host = p.hostname or ""
+        if p.scheme != "https" or p.username or p.password or p.port not in (None, 443):
+            return False
+        if host in IMAGE_HOSTS:
+            return p.path.startswith("/attachments/")
+        if re.fullmatch(r"images-ext-[1-9]\\d*\\.discordapp\\.net", host):
+            return p.path.startswith("/external/")
+        return False
+    except ValueError:
+        return False
+
+def image_candidate(message):
+    """Only the first image per post; source URL never enters the public JSON feed."""
+    for a in message.get("attachments") or []:
+        if not isinstance(a, dict):
+            continue
+        kind = a.get("content_type") or ""
+        name = str(a.get("filename") or "").lower()
+        media = kind.lower().startswith("image/") if isinstance(kind, str) and kind else any(name.endswith(ext) for ext in IMAGE_EXTS)
+        if not media:
+            continue
+        for key in ("url", "proxy_url"):
+            if safe_image_url(a.get(key)):
+                return a[key]
+    for embed in message.get("embeds") or []:
+        if not isinstance(embed, dict):
+            continue
+        for key in ("image", "thumbnail"):
+            part = embed.get(key) or {}
+            if isinstance(part, dict):
+                for url_key in ("proxy_url", "url"):
+                    if safe_image_url(part.get(url_key)):
+                        return part[url_key]
+    return None
+
+def download_art(url):
+    if not safe_image_url(url):
+        raise ValueError("Unsafe art source")
+    req = urllib.request.Request(url, headers={"User-Agent": "SDAS-News-Artwork/1.0"})
+    with urllib.request.build_opener(NoRedirects()).open(req, timeout=25) as response:
+        raw = response.read(MAX_IMAGE_BYTES + 1)
+    if len(raw) > MAX_IMAGE_BYTES:
+        raise ValueError("Artwork exceeds size limit")
+    with Image.open(io.BytesIO(raw)) as im:
+        im.load()
+        picture = ImageOps.exif_transpose(im).convert("RGB")
+        picture.thumbnail((1200, 800))
+        buf = io.BytesIO()
+        picture.save(buf, format="WEBP", quality=82, method=5)
+        return buf.getvalue()
+
+def publish_art(posts, folder, downloader=download_art):
+    """Host normalized, metadata-free images; prune images outside the rolling FIFO."""
+    folder.mkdir(parents=True, exist_ok=True)
+    keep = set()
+    saved = 0
+    for post in posts:
+        source = post.pop("_imageSource", None)
+        if not source:
+            continue
+        mid = post["id"].removeprefix("discord-")
+        file = folder / (mid + ".webp")
+        if not file.is_file():
+            try:
+                data = downloader(source)
+                # Never risk blanking the feed if an old Discord CDN URL has expired.
+                if not data:
+                    continue
+                file.write_bytes(data)
+                saved += 1
+            except (ValueError, OSError, urllib.error.URLError, Image.UnidentifiedImageError,
+                    Image.DecompressionBombError, Image.DecompressionBombWarning):
+                continue
+        post["imageUrl"] = PUBLIC_IMAGE_ROOT + file.name
+        post["imageAlt"] = "Artwork shared with this SDAS announcement"
+        keep.add(file.name)
+    for old in folder.glob("*.webp"):
+        if old.name not in keep:
+            old.unlink()
+    return saved
+
 
 def date_utc(value):
     if not isinstance(value, str):
@@ -57,24 +160,28 @@ def select_posts(messages, channel_id, started_at):
         if msg.get("author", {}).get("bot", False) or msg.get("webhook_id"):
             continue
         raw = clean_text(msg.get("content", ""))
-        if not raw:
+        artwork = image_candidate(msg)
+        if not raw and not artwork:
             continue
         when = date_utc(msg.get("timestamp"))
         if when < started_at:
             continue
         lines = [line.strip() for line in raw.splitlines() if line.strip()]
-        title = lines[0].lstrip("# ").strip()[:120] or "SDAS update"
-        # Text-only; attachments, embeds, and members' identity are never exported.
-        body = ("\n".join(lines[1:]) if len(lines) > 1 else lines[0])[:700]
-        selected.append({
+        title = lines[0].lstrip("# ").strip()[:120] if lines else "SDAS artwork"
+        body = (("\n".join(lines[1:]) if len(lines) > 1 else lines[0]) if lines else "Artwork shared in #org-news.")[:700]
+        item = {
             "id": "discord-" + mid,
             "title": title,
             "body": body,
             "publishedAt": when.isoformat().replace("+00:00", "Z"),
             "discordUrl": f"https://discord.com/channels/{GUILD_ID}/{channel_id}/{mid}",
-        })
+        }
+        if artwork:
+            item["_imageSource"] = artwork
+        selected.append(item)
+    # Select newest 10, then render in chronological/FIFO order.
     selected.sort(key=lambda item: (item["publishedAt"], int(item["id"].split("-")[1])), reverse=True)
-    return selected[:MAX_ITEMS]
+    return list(reversed(selected[:MAX_ITEMS]))
 
 def fetch_json(path, token):
     for attempt in range(3):
@@ -148,6 +255,8 @@ def main():
     try:
         cutoff = datetime.now(timezone.utc) - timedelta(days=90)
         output = collect(token, channel_id, cutoff)
+        downloaded = publish_art(output["items"], Path(__file__).resolve().parent.parent / "org-news" / "images")
+        print(f"News artwork: {downloaded} new image(s) downloaded")
     except (ValueError, RuntimeError, urllib.error.URLError, OSError) as error:
         print(f"News feed preserved; sync failed: {type(error).__name__}: {str(error) if isinstance(error, ValueError) else 'Discord transport/API failure'}", file=sys.stderr)
         return 1
@@ -162,7 +271,7 @@ def main():
     finally:
         if os.path.exists(filename):
             os.remove(filename)
-    print(f"Org news feed prepared with {len(output['items'])} publicly approved-channel posts")
+    print(f"Org news feed prepared with {len(output['items'])} publicly approved-channel posts (FIFO, oldest to newest)")
     return 0
 
 if __name__ == "__main__":

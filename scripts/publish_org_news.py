@@ -51,7 +51,7 @@ def safe_image_url(value):
             return False
         if host in IMAGE_HOSTS:
             return p.path.startswith("/attachments/")
-        if re.fullmatch(r"images-ext-[1-9]\\d*\\.discordapp\\.net", host):
+        if re.fullmatch(r"images-ext-[1-9]\d*\.discordapp\.net", host):
             return p.path.startswith("/external/")
         return False
     except ValueError:

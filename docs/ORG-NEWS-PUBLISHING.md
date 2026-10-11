@@ -1,14 +1,14 @@
 # SDAS #org-news -> News Wire (approval-gated)
 
-**Status: PREPARED, NOT ENABLED. No Discord messages are published by this proposal.**
+**Status: Automatic publication has been enabled on main. History expansion to the previous 90 days is under review in this branch.**
 
 Confirmed Discord `#org-news` channel ID: `1519103863758520471`. The previously provided `1519103965290168560` is the existing Pipeline/game-news channel and is **not** authorized for this feed. The collector refuses any other channel ID.
 
 ## Planned behavior
 - Reuses the existing Discord bot token secret in this Calendar repository.
 - Runs every hour, reads only the single channel named `org-news` in the official SDAS guild.
-- Selects the 12 latest human-authored text announcements **on or after the approved launch timestamp**.
-- Never mirrors earlier channel history. Excludes bot/webhook posts, attachments and rich embeds.
+- Selects up to 100 latest human-authored text announcements in a **rolling 90-day window**.
+- Includes the preceding 90 days of channel history; older messages expire automatically. Excludes bot/webhook posts, attachments and rich embeds.
 - Removes direct Discord @user/@role mentions from public text, renders text without HTML, and links to the original messages.
 - Updates `org-news/feed.json` on the repository default branch and publishes it to the existing GitHub Pages site.
 - The SDAS *preview website* can read that feed, refreshing every ten minutes, and falls back to labeled sample posts when no feed exists.
@@ -18,13 +18,12 @@ Confirmed Discord `#org-news` channel ID: `1519103863758520471`. The previously 
 1. Confirm that posts to `#org-news` are explicitly intended for public display on SDAS.space.
 2. Use confirmed channel ID `1519103863758520471` (runtime verifies channel name `org-news` and SDAS guild).
 3. Note which authors can post. This prototype excludes bot/webhook messages by design.
-4. Decide a UTC start timestamp **after** announcement/author consent, e.g. `2026-10-12T00:00:00Z` (example only).
+4. The user has approved including historic posts up to 90 days old.
 5. Review the publishing and removal policy before enabling.
 
 Then merge the draft PR and configure GitHub **repository variables** in `BobbyBull2/SDAS-SC-Calendar` > Settings > Secrets and variables > Actions > Variables:
 
 - `SDAS_ORG_NEWS_CHANNEL_ID`: `1519103863758520471` (exact, enforced at runtime).
-- `SDAS_ORG_NEWS_START_AT`: the approved publication cutoff ISO 8601 UTC timestamp.
 - `SDAS_ORG_NEWS_PUBLIC_ENABLED`: `true` only after the above approvals; unset or `false` to stop the workflow.
 
 The existing `DISCORD_BOT_TOKEN` repository secret is reused. **Never paste it in chat or commit it.** The bot must have access to the channel, `View Channel` and `Read Message History` permissions and access to message content (the Discord privileged Message Content intent if required). Do not grant administrator rights.

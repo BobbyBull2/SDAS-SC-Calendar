@@ -36,6 +36,20 @@ class NewsTests(unittest.TestCase):
         self.assertEqual(items[0]["title"], "Org announcement")
         self.assertEqual(items[0]["body"], "Hello everyone")
 
+    def test_rolling_three_month_window(self):
+        from datetime import timedelta
+        now = datetime(2026, 10, 11, 22, tzinfo=timezone.utc)
+        cutoff = now - timedelta(days=90)
+        recent = (now - timedelta(days=89)).isoformat()
+        expired = (now - timedelta(days=91)).isoformat()
+        entries = [msg("1558000000000000001", "Recent archive", recent),
+                   msg("1558000000000000002", "Expired archive", expired)]
+        self.assertEqual([x["title"] for x in news.select_posts(entries, CHANNEL, cutoff)], ["Recent archive"])
+
+    def test_feed_archive_can_include_more_than_twelve(self):
+        rows = [msg(str(1558000000000000000 + i), f"Post {i}") for i in range(20)]
+        self.assertEqual(len(news.select_posts(rows, CHANNEL, START)), 20)
+
     def test_timestamp_requires_timezone(self):
         with self.assertRaises(ValueError):
             news.date_utc("2026-10-11T20:00:00")

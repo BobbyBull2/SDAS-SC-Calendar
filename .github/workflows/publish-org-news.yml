@@ -46,7 +46,6 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           SDAS_ORG_NEWS_CHANNEL_ID: ${{ vars.SDAS_ORG_NEWS_CHANNEL_ID }}
-          SDAS_ORG_NEWS_START_AT: ${{ vars.SDAS_ORG_NEWS_START_AT }}
           SDAS_ORG_NEWS_PUBLIC_ENABLED: ${{ vars.SDAS_ORG_NEWS_PUBLIC_ENABLED }}
         run: python scripts/publish_org_news.py
 

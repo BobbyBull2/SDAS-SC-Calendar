@@ -2,7 +2,7 @@
 """Publish only explicitly authorized SDAS #org-news text to a small public JSON feed.
 
 This collector is intentionally inert unless the guarded GitHub workflow is enabled
-with both the correct channel ID and a post-approval start timestamp.
+with the approved channel ID and publication switch.
 """
 import json
 import os
@@ -13,13 +13,13 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 GUILD_ID = "1518410019249459236"
 APPROVED_CHANNEL_ID = "1519103863758520471"
 API = "https://discord.com/api/v10"
-MAX_ITEMS = 12
-MAX_PAGES = 5
+MAX_ITEMS = 100
+MAX_PAGES = 100
 CHANNEL_ID_RE = re.compile(r"^[0-9]{17,20}$")
 USER_MENTION = re.compile(r"<@!?[0-9]{17,20}>")
 ROLE_MENTION = re.compile(r"<@&[0-9]{17,20}>")
@@ -111,6 +111,7 @@ def collect(token, channel_id, started_at, getter=fetch_json):
         raise ValueError("Approved Discord channel is not a supported text/announcement channel")
     # The exact approved channel ID is pinned above. A cosmetic Discord rename is okay.
     messages, cursor, seen = [], None, set()
+    reached_cutoff = False
     for _ in range(MAX_PAGES):
         path = f"/channels/{channel_id}/messages?limit=100"
         if cursor:
@@ -128,9 +129,12 @@ def collect(token, channel_id, started_at, getter=fetch_json):
         cursor = str(min(int(x) for x in ids))
         # Discord sends newest first. Stop when entire batch predates the opt-in.
         if all(date_utc(item.get("timestamp")) < started_at for item in batch):
+            reached_cutoff = True
             break
         if len(select_posts(messages, channel_id, started_at)) >= MAX_ITEMS:
             break
+    if not reached_cutoff and len(messages) >= MAX_PAGES * 100 and len(select_posts(messages, channel_id, started_at)) < MAX_ITEMS:
+        raise ValueError("Three-month history exceeds scan limit; refusing incomplete archive")
     posts = select_posts(messages, channel_id, started_at)
     return {"schemaVersion": 1, "mode": "live", "channelId": channel_id, "items": posts}
 
@@ -139,11 +143,11 @@ def main():
         raise SystemExit("News publication is disabled; approval is required")
     token = os.environ.get("DISCORD_BOT_TOKEN", "")
     channel_id = os.environ.get("SDAS_ORG_NEWS_CHANNEL_ID", "")
-    start_at = os.environ.get("SDAS_ORG_NEWS_START_AT", "")
-    if not token or not channel_id or not start_at:
-        raise SystemExit("Required bot token, approved channel ID or start timestamp missing")
+    if not token or not channel_id:
+        raise SystemExit("Required bot token or approved channel ID missing")
     try:
-        output = collect(token, channel_id, date_utc(start_at))
+        cutoff = datetime.now(timezone.utc) - timedelta(days=90)
+        output = collect(token, channel_id, cutoff)
     except (ValueError, RuntimeError, urllib.error.URLError, OSError) as error:
         print(f"News feed preserved; sync failed: {type(error).__name__}: {str(error) if isinstance(error, ValueError) else 'Discord transport/API failure'}", file=sys.stderr)
         return 1

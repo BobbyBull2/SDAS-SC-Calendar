@@ -48,7 +48,39 @@ class NewsTests(unittest.TestCase):
 
     def test_feed_archive_can_include_more_than_twelve(self):
         rows = [msg(str(1558000000000000000 + i), f"Post {i}") for i in range(20)]
-        self.assertEqual(len(news.select_posts(rows, CHANNEL, START)), 20)
+        self.assertEqual(len(news.select_posts(rows, CHANNEL, START)), 10)
+
+    def test_fifo_oldest_out_first(self):
+        rows = [msg(str(1558000000000000000 + i), f"Post {i}") for i in range(12)]
+        chosen = news.select_posts(rows, CHANNEL, START)
+        self.assertEqual(len(chosen), 10)
+        self.assertEqual(chosen[0]["title"], "Post 2")
+        self.assertEqual(chosen[-1]["title"], "Post 11")
+
+    def test_discord_attachment_image_and_art_only_post(self):
+        art = "https://cdn.discordapp.com/attachments/1519103863758520471/1558000000000000020/photo.png"
+        row = msg("1558000000000000020", "")
+        row["attachments"] = [{"content_type":"image/png", "url":art, "filename":"photo.png"}]
+        chosen = news.select_posts([row], CHANNEL, START)
+        self.assertEqual(chosen[0]["title"], "SDAS artwork")
+        self.assertEqual(chosen[0]["_imageSource"], art)
+        self.assertFalse(news.safe_image_url("https://other-site.example/attachments/a/b.png"))
+
+    def test_artwork_feed_url_is_hosted_and_source_is_omitted(self):
+        import tempfile
+        import json
+        art = "https://cdn.discordapp.com/attachments/1519103863758520471/1558000000000000020/photo.png"
+        row = msg("1558000000000000020", "Art news")
+        row["attachments"] = [{"content_type":"image/png", "url":art}]
+        chosen = news.select_posts([row], CHANNEL, START)
+        with tempfile.TemporaryDirectory() as tmp:
+            from pathlib import Path
+            folder=Path(tmp)
+            self.assertEqual(news.publish_art(chosen,folder,downloader=lambda url:b"fake-webp-test"),1)
+            self.assertIn("imageUrl",chosen[0])
+            self.assertNotIn("_imageSource",chosen[0])
+            self.assertNotIn("cdn.discordapp.com",json.dumps(chosen))
+            self.assertEqual(news.publish_art(chosen,folder,downloader=lambda url:b""),0)
 
     def test_timestamp_requires_timezone(self):
         with self.assertRaises(ValueError):

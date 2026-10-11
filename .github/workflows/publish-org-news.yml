@@ -1,0 +1,73 @@
+name: Publish SDAS Org News (disabled until approved)
+
+on:
+  schedule:
+    - cron: '47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Share the existing GitHub Pages deployment lock with the screenshot publisher.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Explicit approval gate; no Discord content is read or published until enabled.
+    if: vars.SDAS_ORG_NEWS_PUBLIC_ENABLED == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out calendar and gallery website
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run news privacy and schema tests
+        run: python -m unittest discover -s tests -p test_org_news.py -v
+
+      - name: Collect only approved-channel posts after approved start
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          SDAS_ORG_NEWS_CHANNEL_ID: ${{ vars.SDAS_ORG_NEWS_CHANNEL_ID }}
+          SDAS_ORG_NEWS_START_AT: ${{ vars.SDAS_ORG_NEWS_START_AT }}
+          SDAS_ORG_NEWS_PUBLIC_ENABLED: ${{ vars.SDAS_ORG_NEWS_PUBLIC_ENABLED }}
+        run: python scripts/publish_org_news.py
+
+      - name: Commit only the news JSON file
+        run: |
+          if git diff --quiet -- org-news/feed.json && [ -z "$(git ls-files --others --exclude-standard org-news/feed.json)" ]; then
+            echo 'Org news unchanged.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -- org-news/feed.json
+            git commit -m 'Update approved SDAS org-news web feed'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      # GITHUB_TOKEN commits don't trigger pages.yml. Publish in the same workflow.
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload calendar, gallery and news feed
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy site to existing GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

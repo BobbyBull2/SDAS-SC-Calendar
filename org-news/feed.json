@@ -4,15 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1542226737268662283",
-      "title": "https://klipy.com/gifs/wwe-kurt-angle",
-      "body": "https://klipy.com/gifs/wwe-kurt-angle",
-      "publishedAt": "2026-08-26T17:38:27.352000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1542226737268662283",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1542226737268662283.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
       "id": "discord-1542226749147058206",
       "title": "4.10 is getting pushed out today!",
       "body": "4.10 is getting pushed out today!",
@@ -87,6 +78,15 @@
       "publishedAt": "2026-10-11T00:17:46.819000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1558634684508803144",
       "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1558634684508803144.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1559240258317586503",
+      "title": "**__Website Update__**",
+      "body": "🚀 Two new features are live on SDAS.space!\nCheck out the screenshot for a look at our newest additions:\n🛠️ Pilot’s Toolkit\nSix handy community resources in one place:\n• UEX: Trading and market data\n• Erkul: Ship loadouts\n• SC Craft Tools: Crafting and blueprints\n• SC Trade Tools: Trade routes and commodities\n• Star Citizen Wiki: Guides and reference\n• StarStrings: Community-made text improvements\nSwipe through the cards or use the arrows, then click a tool to open its website in a new tab.\n📡 SDAS News Wire\nCatch up on org announcements without digging through Discord. The news carousel automatically pulls from #org-news, includes artwork when available, and shows the newest posts first.\nIt k",
+      "publishedAt": "2026-10-12T16:24:06.866000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559240258317586503",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1559240258317586503.webp",
       "imageAlt": "Artwork shared with this SDAS announcement"
     }
   ]

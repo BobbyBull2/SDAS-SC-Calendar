@@ -4,13 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1542226749147058206",
-      "title": "4.10 is getting pushed out today!",
-      "body": "4.10 is getting pushed out today!",
-      "publishedAt": "2026-08-26T17:38:30.184000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1542226749147058206"
-    },
-    {
       "id": "discord-1544142974441750709",
       "title": "__**Discord Update**__",
       "body": "- #channel has been revised allowing members to create threads for group requests and allowing others to comment on those threads. This will make things more organized and keep LFG posts from being lost in comments.\n- A new #channel channel has been made to allow members to post suggestions that they may have to improve our community.\n- #channel has been revised allowing members to now make their own post advertising items they may have or crafting they are offering.\neveryone",
@@ -88,6 +81,13 @@
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559240258317586503",
       "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1559240258317586503.webp",
       "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1559901104463028317",
+      "title": "__**Website Update**__",
+      "body": "SDAS Website — Build v2\nBranding & Homepage\n* Updated the SDAS logo with the reclining astronaut emblem and NASA-inspired wordmark.\n* Applied NASA-style typography to large headings while preserving smaller text.\n* Refined the homepage title and layout.\n* Added the Thinking About Joining SDAS? button linking to the New Members page.\n* Removed the extra Discord button from the homepage hero section.\nNew Members Page\n* Created a dedicated welcome page for prospective members.\n* Added the SDAS bar scene featuring a new pilot arriving to meet the crew.\n* Optimized the image presentation for desktop and mobile.\n* Added direct links to join SDAS on RSI and Discord.\n* Added a three-step introductio",
+      "publishedAt": "2026-10-14T12:10:04.865000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559901104463028317"
     }
   ]
 }

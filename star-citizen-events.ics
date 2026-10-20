@@ -187,6 +187,19 @@ DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pipeline-day-of-the-vara@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:[CIG] Day Of The Vara
+DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://robertsspac
+ eindustries.com/en/comm-link/transmission/21388-This-Week-In-Star-Citize
+ n
+URL:https://robertsspaceindustries.com/en/comm-link/transmission/21388-Th
+ is-Week-In-Star-Citizen
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:discord-1544483191786578031-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261023T000000Z

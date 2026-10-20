@@ -4,49 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1551987582488027234",
-      "title": "**__New Members__**",
-      "body": "everyone welcome our new members to our Org for some this is a bit late but i like to give everyone their shoutout, so welcome to the crew [member] , [member] , [member] , [member] , [member] , [member] , [member] , [member]!! So cheers gentlemen thanks for being here! Lets do big things and continue to grow as a community!",
-      "publishedAt": "2026-09-22T16:04:34.200000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1551987582488027234",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1551987582488027234.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1552166820906143751",
-      "title": "**__Announcement__**",
-      "body": "Arggh everyone raise your pints for a toast! That bastard [member] did it he cracked the code, which means he’s making off with the whole pot! 60 million AUEC is coming your way along with some components and gear! Seriously congratulations 🎉🎊 everyone\nAnd for anyone that missed it the code is 7-AQ42-0829-4567-15-RDFE4587-324-L6 so everyone go get your coin!",
-      "publishedAt": "2026-09-23T03:56:47.969000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1552166820906143751",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1552166820906143751.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1557779091317334066",
-      "title": "__**Org News**__",
-      "body": "SDAS STAR CITIZEN CALENDAR\nStay synced with the ’Verse\nSome Dudes and a Spaceship now has its own live Star Citizen calendar.\nThe SDAS Star Citizen Calendar keeps our org events, weekly activities, and important Star Citizen dates in one place. Subscribe once, and the calendar updates automatically as new events are scheduled or dates change.\nNo spreadsheets. No hunting through Discord. No “wait, was that this Wednesday or next Wednesday?”\nJust open your calendar and see what’s coming.\nWHAT’S ON IT\nThe calendar automatically pulls together:\n* [SDAS] Org Events from Discord Scheduled Events\n* [PATCH] LIVE Patch dates\n* [PTU] PTU / EPTU dates\n* [CIG] Major dated Star Citizen events and announc",
-      "publishedAt": "2026-10-08T15:37:57.506000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1557779091317334066"
-    },
-    {
-      "id": "discord-1557780155194413157",
-      "title": "SDAS artwork",
-      "body": "Artwork shared in #org-news.",
-      "publishedAt": "2026-10-08T15:42:11.154000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1557780155194413157",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1557780155194413157.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1558634684508803144",
-      "title": "__**Org News**__",
-      "body": "# 🚀 ORG NEWS | OUR WEBSITE IS LIVE! 🌐\n**Some Dudes and a Spaceship officially has its own website!**\n🌐 **https://sdas.space/**\nThat's right, gentlemen! SDAS is expanding beyond Discord and into its own little corner of the internet.\nWhat started as a group of dudes looking for good company and adventures in the 'verse continues to grow, and now we've got a place on the web to call our own!\n### 🛰️ WHAT'S THE WEBSITE FOR?\nOur website serves as the **official online home of Some Dudes and a Spaceship**, giving our organization a presence outside of Discord and helping more Star Citizen players discover our community.\n**WHY SHOULD YOU CHECK IT OUT?**\n🌎 **A Home for SDAS**\nA dedicated place on th",
-      "publishedAt": "2026-10-11T00:17:46.819000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1558634684508803144",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1558634684508803144.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
       "id": "discord-1559240258317586503",
       "title": "**__Website Update__**",
       "body": "🚀 Two new features are live on SDAS.space!\nCheck out the screenshot for a look at our newest additions:\n🛠️ Pilot’s Toolkit\nSix handy community resources in one place:\n• UEX: Trading and market data\n• Erkul: Ship loadouts\n• SC Craft Tools: Crafting and blueprints\n• SC Trade Tools: Trade routes and commodities\n• Star Citizen Wiki: Guides and reference\n• StarStrings: Community-made text improvements\nSwipe through the cards or use the arrows, then click a tool to open its website in a new tab.\n📡 SDAS News Wire\nCatch up on org announcements without digging through Discord. The news carousel automatically pulls from #org-news, includes artwork when available, and shows the newest posts first.\nIt k",
@@ -84,6 +41,43 @@
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1561915297869598844",
       "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1561915297869598844.webp",
       "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1562134930039898242",
+      "title": "🚀 SDAS FLEET MANAGER IS HERE!",
+      "body": "Some Dudes and a Fleet Manager is ready for the org!\nGood Friends. Bad Ideas. Legendary Stories.\nEver wondered who in SDAS owns that ship you need for an operation? Or who has a MOLE, a C2, a medical ship, or something with enough firepower to make questionable decisions even more questionable?\nWell, now there’s a place to find out!\nWe’ve built our own online Fleet Manager, designed specifically for Some Dudes and a Spaceship.\n🛸 What can you do?\n* My Hangar: Add and manage your personal Star Citizen fleet, including pledged and aUEC ships.\n* Org Fleet Registry: Browse ships that SDAS members have chosen to share with the org.\n* Pilot Directory: Find members and see their shared vessels.\n* RS",
+      "publishedAt": "2026-10-20T16:06:30.385000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562134930039898242",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1562134930039898242.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1562135155676815502",
+      "title": "I will be posting a new channel soon with an easy startup guide for the new fleet manager if anyone has any problems, bu",
+      "body": "I will be posting a new channel soon with an easy startup guide for the new fleet manager if anyone has any problems, but it’s pretty self explanatory so I don’t foresee any issues",
+      "publishedAt": "2026-10-20T16:07:24.181000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562135155676815502"
+    },
+    {
+      "id": "discord-1562171449266016390",
+      "title": "At this time only Patches and above can post their ships. Prospects are considered new and have a high likelihood or eit",
+      "body": "At this time only Patches and above can post their ships. Prospects are considered new and have a high likelihood or either not staying with the Org or the game in general. So in order to mitigate hundreds of extra ships on the hanger of players who are not active with the Org we decided to make it Patch and above. Hopefully everyone understands everyone",
+      "publishedAt": "2026-10-20T18:31:37.247000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562171449266016390"
+    },
+    {
+      "id": "discord-1562172402425667616",
+      "title": "A guide has also been posted in #channel to help some people out.",
+      "body": "A guide has also been posted in #channel to help some people out.",
+      "publishedAt": "2026-10-20T18:35:24.498000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562172402425667616"
+    },
+    {
+      "id": "discord-1562177401557885032",
+      "title": "What Prospects can now do",
+      "body": "- Prospect — Now have Read Only access level.\n- View the Fleet Terminal and shared Org Fleet Registry.\n- Browse the Pilot Directory.\n- View ships, loadouts, and photos that members have chosen to share.\nThey cannot add, edit, delete, import, or share ships. everyone",
+      "publishedAt": "2026-10-20T18:55:16.384000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562177401557885032"
     }
   ]
 }

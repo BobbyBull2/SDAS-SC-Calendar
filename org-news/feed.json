@@ -4,33 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1544142974441750709",
-      "title": "__**Discord Update**__",
-      "body": "- #channel has been revised allowing members to create threads for group requests and allowing others to comment on those threads. This will make things more organized and keep LFG posts from being lost in comments.\n- A new #channel channel has been made to allow members to post suggestions that they may have to improve our community.\n- #channel has been revised allowing members to now make their own post advertising items they may have or crafting they are offering.\neveryone",
-      "publishedAt": "2026-09-01T00:32:53.896000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1544142974441750709",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1544142974441750709.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1544147876865773598",
-      "title": "__**New Members**__",
-      "body": "everyone welcome our new members to our Org for some this is a bit late but i like to give everyone their shoutout, so welcome to the crew [member], [member], [member], [member], [member], [member], [member], [member], [member], [member], [member], @SLG_Tunez!! So cheers ladies and gentlemen thanks for being here! <a:Cheers:750302311607173171>  Also thank you to everyone we are 69 days in since launching this Org and we just hit 60 members I don't know about you all but I'm having a great time with this crew so lets keep it going!  <a:cheers:1152263516586258472>",
-      "publishedAt": "2026-09-01T00:52:22.725000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1544147876865773598",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1544147876865773598.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1547289035700175008",
-      "title": "__**Announcement**__",
-      "body": "For Pirate Week we are adding a pool under #channel to the discord everyone can add to the pool and the first person to the code takes the pool! Good Luck everyone",
-      "publishedAt": "2026-09-09T16:54:13.351000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1547289035700175008",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1547289035700175008.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
       "id": "discord-1551987582488027234",
       "title": "**__New Members__**",
       "body": "everyone welcome our new members to our Org for some this is a bit late but i like to give everyone their shoutout, so welcome to the crew [member] , [member] , [member] , [member] , [member] , [member] , [member] , [member]!! So cheers gentlemen thanks for being here! Lets do big things and continue to grow as a community!",
@@ -88,6 +61,29 @@
       "body": "SDAS Website — Build v2\nBranding & Homepage\n* Updated the SDAS logo with the reclining astronaut emblem and NASA-inspired wordmark.\n* Applied NASA-style typography to large headings while preserving smaller text.\n* Refined the homepage title and layout.\n* Added the Thinking About Joining SDAS? button linking to the New Members page.\n* Removed the extra Discord button from the homepage hero section.\nNew Members Page\n* Created a dedicated welcome page for prospective members.\n* Added the SDAS bar scene featuring a new pilot arriving to meet the crew.\n* Optimized the image presentation for desktop and mobile.\n* Added direct links to join SDAS on RSI and Discord.\n* Added a three-step introductio",
       "publishedAt": "2026-10-14T12:10:04.865000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559901104463028317"
+    },
+    {
+      "id": "discord-1561915074732368045",
+      "title": "***A Message About Our Org***",
+      "body": "It's come to my attention that some members may have concerns that SDAS has become more of a pirate organization lately. I want to take a moment to clear a few things up and explain where we stand as an Org.\n**First and foremost, SDAS is NOT a pirate Org.**\nSDAS was founded on a simple idea: to create a community where anyone can come together, meet cool people, make friends, and have fun playing Star Citizen. That means **ALL game loops**, whether it's mining, salvaging, cargo hauling, PvE, PvP, exploration, or yes, even piracy.\nPiracy does happen within SDAS. I'm not going to pretend it doesn't. However, it happens far less frequently than some people might think. And when it does happen, ",
+      "publishedAt": "2026-10-20T01:32:52.795000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1561915074732368045"
+    },
+    {
+      "id": "discord-1561915103199367179",
+      "title": "**I will not build or restrict SDAS around one singular playstyle, regardless of how strongly some people may feel about",
+      "body": "I also want to say this: if you're avoiding joining Org nights or hanging out with members simply because you've heard that some people participate in piracy, you're missing out on a genuinely awesome group of people.\nSDAS has some of the most helpful, generous, and downright hilarious individuals I've ever met in the verse. I've seen people go out of their way to help other members with absolutely nothing to gain for themselves, simply because that's what we do here.\nAnd I don't want anyone overlooking that side of this community.\n**Moving forward**, we'll also be organizing more mining, PvE, and other events to make sure there's something for everyone to participate in. I want people to fe",
+      "publishedAt": "2026-10-20T01:32:59.582000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1561915103199367179"
+    },
+    {
+      "id": "discord-1561915297869598844",
+      "title": "SDAS artwork",
+      "body": "Artwork shared in #org-news.",
+      "publishedAt": "2026-10-20T01:33:45.995000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1561915297869598844",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1561915297869598844.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
     }
   ]
 }

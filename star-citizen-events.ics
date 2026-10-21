@@ -1603,4 +1603,20 @@ DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
 URL:https://discord.com/events/1518410019249459236/1548466884045705350
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:discord-1562271120659452024@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART:20261031T010000Z
+DTEND:20261031T050000Z
+SUMMARY:[SDAS] Friday Night Fights
+DESCRIPTION:SDAS Discord Scheduled Event\n\nIT’S TIME! Last Friday of eve
+ ry month is Friday Night Fights! Locations will change every fight night
+ .\n\nNext Fight will be held in the Constellation MK5\, Location CheckMa
+ te\, Pyro! 1 Million AUEC buy in\, single elimination and winner takes i
+ t all.\n\nView event in Discord: https://discord.com/events/151841001924
+ 9459236/1562271120659452024
+RRULE:FREQ=MONTHLY;BYDAY=5SA
+URL:https://discord.com/events/1518410019249459236/1562271120659452024
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

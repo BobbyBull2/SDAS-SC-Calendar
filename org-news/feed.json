@@ -4,29 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1559240258317586503",
-      "title": "**__Website Update__**",
-      "body": "🚀 Two new features are live on SDAS.space!\nCheck out the screenshot for a look at our newest additions:\n🛠️ Pilot’s Toolkit\nSix handy community resources in one place:\n• UEX: Trading and market data\n• Erkul: Ship loadouts\n• SC Craft Tools: Crafting and blueprints\n• SC Trade Tools: Trade routes and commodities\n• Star Citizen Wiki: Guides and reference\n• StarStrings: Community-made text improvements\nSwipe through the cards or use the arrows, then click a tool to open its website in a new tab.\n📡 SDAS News Wire\nCatch up on org announcements without digging through Discord. The news carousel automatically pulls from #org-news, includes artwork when available, and shows the newest posts first.\nIt k",
-      "publishedAt": "2026-10-12T16:24:06.866000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559240258317586503",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1559240258317586503.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
-      "id": "discord-1559901104463028317",
-      "title": "__**Website Update**__",
-      "body": "SDAS Website — Build v2\nBranding & Homepage\n* Updated the SDAS logo with the reclining astronaut emblem and NASA-inspired wordmark.\n* Applied NASA-style typography to large headings while preserving smaller text.\n* Refined the homepage title and layout.\n* Added the Thinking About Joining SDAS? button linking to the New Members page.\n* Removed the extra Discord button from the homepage hero section.\nNew Members Page\n* Created a dedicated welcome page for prospective members.\n* Added the SDAS bar scene featuring a new pilot arriving to meet the crew.\n* Optimized the image presentation for desktop and mobile.\n* Added direct links to join SDAS on RSI and Discord.\n* Added a three-step introductio",
-      "publishedAt": "2026-10-14T12:10:04.865000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1559901104463028317"
-    },
-    {
-      "id": "discord-1561915074732368045",
-      "title": "***A Message About Our Org***",
-      "body": "It's come to my attention that some members may have concerns that SDAS has become more of a pirate organization lately. I want to take a moment to clear a few things up and explain where we stand as an Org.\n**First and foremost, SDAS is NOT a pirate Org.**\nSDAS was founded on a simple idea: to create a community where anyone can come together, meet cool people, make friends, and have fun playing Star Citizen. That means **ALL game loops**, whether it's mining, salvaging, cargo hauling, PvE, PvP, exploration, or yes, even piracy.\nPiracy does happen within SDAS. I'm not going to pretend it doesn't. However, it happens far less frequently than some people might think. And when it does happen, ",
-      "publishedAt": "2026-10-20T01:32:52.795000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1561915074732368045"
-    },
-    {
       "id": "discord-1561915103199367179",
       "title": "**I will not build or restrict SDAS around one singular playstyle, regardless of how strongly some people may feel about",
       "body": "I also want to say this: if you're avoiding joining Org nights or hanging out with members simply because you've heard that some people participate in piracy, you're missing out on a genuinely awesome group of people.\nSDAS has some of the most helpful, generous, and downright hilarious individuals I've ever met in the verse. I've seen people go out of their way to help other members with absolutely nothing to gain for themselves, simply because that's what we do here.\nAnd I don't want anyone overlooking that side of this community.\n**Moving forward**, we'll also be organizing more mining, PvE, and other events to make sure there's something for everyone to participate in. I want people to fe",
@@ -78,6 +55,31 @@
       "body": "- Prospect — Now have Read Only access level.\n- View the Fleet Terminal and shared Org Fleet Registry.\n- Browse the Pilot Directory.\n- View ships, loadouts, and photos that members have chosen to share.\nThey cannot add, edit, delete, import, or share ships. everyone",
       "publishedAt": "2026-10-20T18:55:16.384000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562177401557885032"
+    },
+    {
+      "id": "discord-1562613563896369163",
+      "title": "**__NEW SDAS FEATURE — TOP 5 ISSUE COUNCIL!__**",
+      "body": "Good Friends. Bad Ideas. Legendary Stories. And occasionally, a few bugs.\nDudes, we’ve added a brand-new feature to SDAS.space designed to help our organization make a difference in the development of Star Citizen!\nIntroducing the SDAS TOP 5 ISSUE COUNCIL!\nCHECK IT OUT HERE:\nhttps://sdas.space/#issue-council\nWHAT IS IT?\nWe’ve created a dedicated section on our website that highlights five Star Citizen bugs or issues we want to bring to the community’s attention.\nRather than simply complaining about broken missions, disappearing cargo, or whatever else the ‘verse throws at us, we can now help bring those issues to CIG’s attention through the official Issue Council.\nHOW DOES IT WORK?\nSubmit Yo",
+      "publishedAt": "2026-10-21T23:48:25.589000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562613563896369163"
+    },
+    {
+      "id": "discord-1562614347472179251",
+      "title": "SDAS artwork",
+      "body": "Artwork shared in #org-news.",
+      "publishedAt": "2026-10-21T23:51:32.408000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562614347472179251",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1562614347472179251.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1562620029768310935",
+      "title": "**__Promotions __**",
+      "body": "[member] , [member] , [member] , [member] , [member] , [member] , [member] , [member] [member] [member] [member] [member]  Are all being promoted to Patch for their contributions to the Community and for being active members. Buy em a round! <a:Cheers:750302311607173171>  everyone",
+      "publishedAt": "2026-10-22T00:14:07.173000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562620029768310935",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1562620029768310935.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
     }
   ]
 }

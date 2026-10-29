@@ -930,8 +930,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261029T003000Z
-DTEND:20261029T043000Z
+DTSTART:20261105T003000Z
+DTEND:20261105T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -943,8 +943,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-1@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261105T013000Z
-DTEND:20261105T053000Z
+DTSTART:20261112T003000Z
+DTEND:20261112T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -956,8 +956,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-2@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261112T013000Z
-DTEND:20261112T053000Z
+DTSTART:20261119T003000Z
+DTEND:20261119T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -969,8 +969,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-3@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261119T013000Z
-DTEND:20261119T053000Z
+DTSTART:20261126T003000Z
+DTEND:20261126T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -982,8 +982,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-4@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261126T013000Z
-DTEND:20261126T053000Z
+DTSTART:20261203T003000Z
+DTEND:20261203T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -995,8 +995,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-5@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261203T013000Z
-DTEND:20261203T053000Z
+DTSTART:20261210T003000Z
+DTEND:20261210T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1008,8 +1008,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-6@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261210T013000Z
-DTEND:20261210T053000Z
+DTSTART:20261217T003000Z
+DTEND:20261217T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1021,8 +1021,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-7@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261217T013000Z
-DTEND:20261217T053000Z
+DTSTART:20261224T003000Z
+DTEND:20261224T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1034,8 +1034,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-8@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261224T013000Z
-DTEND:20261224T053000Z
+DTSTART:20261231T003000Z
+DTEND:20261231T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1047,8 +1047,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-9@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261231T013000Z
-DTEND:20261231T053000Z
+DTSTART:20270107T003000Z
+DTEND:20270107T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1060,8 +1060,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-10@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270107T013000Z
-DTEND:20270107T053000Z
+DTSTART:20270114T003000Z
+DTEND:20270114T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1073,8 +1073,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-11@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270114T013000Z
-DTEND:20270114T053000Z
+DTSTART:20270121T003000Z
+DTEND:20270121T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1086,8 +1086,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-12@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270121T013000Z
-DTEND:20270121T053000Z
+DTSTART:20270128T003000Z
+DTEND:20270128T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1099,8 +1099,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-13@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270128T013000Z
-DTEND:20270128T053000Z
+DTSTART:20270204T003000Z
+DTEND:20270204T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1112,8 +1112,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-14@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270204T013000Z
-DTEND:20270204T053000Z
+DTSTART:20270211T003000Z
+DTEND:20270211T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1125,8 +1125,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-15@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270211T013000Z
-DTEND:20270211T053000Z
+DTSTART:20270218T003000Z
+DTEND:20270218T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1138,8 +1138,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-16@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270218T013000Z
-DTEND:20270218T053000Z
+DTSTART:20270225T003000Z
+DTEND:20270225T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1151,8 +1151,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-17@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270225T013000Z
-DTEND:20270225T053000Z
+DTSTART:20270304T003000Z
+DTEND:20270304T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1164,8 +1164,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-18@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270304T013000Z
-DTEND:20270304T053000Z
+DTSTART:20270311T003000Z
+DTEND:20270311T043000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1177,8 +1177,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-19@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270311T013000Z
-DTEND:20270311T053000Z
+DTSTART:20270317T233000Z
+DTEND:20270318T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1190,8 +1190,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-20@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270318T003000Z
-DTEND:20270318T043000Z
+DTSTART:20270324T233000Z
+DTEND:20270325T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1203,8 +1203,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-21@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270325T003000Z
-DTEND:20270325T043000Z
+DTSTART:20270331T233000Z
+DTEND:20270401T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1216,8 +1216,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-22@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270401T003000Z
-DTEND:20270401T043000Z
+DTSTART:20270407T233000Z
+DTEND:20270408T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1229,8 +1229,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-23@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270408T003000Z
-DTEND:20270408T043000Z
+DTSTART:20270414T233000Z
+DTEND:20270415T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1242,8 +1242,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-24@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270415T003000Z
-DTEND:20270415T043000Z
+DTSTART:20270421T233000Z
+DTEND:20270422T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1255,8 +1255,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-25@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270422T003000Z
-DTEND:20270422T043000Z
+DTSTART:20270428T233000Z
+DTEND:20270429T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1268,8 +1268,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-26@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270429T003000Z
-DTEND:20270429T043000Z
+DTSTART:20270505T233000Z
+DTEND:20270506T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1281,8 +1281,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-27@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270506T003000Z
-DTEND:20270506T043000Z
+DTSTART:20270512T233000Z
+DTEND:20270513T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1294,8 +1294,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-28@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270513T003000Z
-DTEND:20270513T043000Z
+DTSTART:20270519T233000Z
+DTEND:20270520T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1307,8 +1307,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-29@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270520T003000Z
-DTEND:20270520T043000Z
+DTSTART:20270526T233000Z
+DTEND:20270527T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1320,8 +1320,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-30@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270527T003000Z
-DTEND:20270527T043000Z
+DTSTART:20270602T233000Z
+DTEND:20270603T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1333,8 +1333,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-31@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270603T003000Z
-DTEND:20270603T043000Z
+DTSTART:20270609T233000Z
+DTEND:20270610T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1346,8 +1346,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-32@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270610T003000Z
-DTEND:20270610T043000Z
+DTSTART:20270616T233000Z
+DTEND:20270617T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1359,8 +1359,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-33@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270617T003000Z
-DTEND:20270617T043000Z
+DTSTART:20270623T233000Z
+DTEND:20270624T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1372,8 +1372,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-34@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270624T003000Z
-DTEND:20270624T043000Z
+DTSTART:20270630T233000Z
+DTEND:20270701T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1385,8 +1385,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-35@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270701T003000Z
-DTEND:20270701T043000Z
+DTSTART:20270707T233000Z
+DTEND:20270708T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1398,8 +1398,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-36@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270708T003000Z
-DTEND:20270708T043000Z
+DTSTART:20270714T233000Z
+DTEND:20270715T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1411,8 +1411,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-37@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270715T003000Z
-DTEND:20270715T043000Z
+DTSTART:20270721T233000Z
+DTEND:20270722T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1424,8 +1424,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-38@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270722T003000Z
-DTEND:20270722T043000Z
+DTSTART:20270728T233000Z
+DTEND:20270729T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1437,8 +1437,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-39@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270729T003000Z
-DTEND:20270729T043000Z
+DTSTART:20270804T233000Z
+DTEND:20270805T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1450,8 +1450,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-40@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270805T003000Z
-DTEND:20270805T043000Z
+DTSTART:20270811T233000Z
+DTEND:20270812T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1463,8 +1463,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-41@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270812T003000Z
-DTEND:20270812T043000Z
+DTSTART:20270818T233000Z
+DTEND:20270819T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1476,8 +1476,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-42@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270819T003000Z
-DTEND:20270819T043000Z
+DTSTART:20270825T233000Z
+DTEND:20270826T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1489,8 +1489,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-43@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270826T003000Z
-DTEND:20270826T043000Z
+DTSTART:20270901T233000Z
+DTEND:20270902T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1502,8 +1502,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-44@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270902T003000Z
-DTEND:20270902T043000Z
+DTSTART:20270908T233000Z
+DTEND:20270909T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1515,8 +1515,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-45@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270909T003000Z
-DTEND:20270909T043000Z
+DTSTART:20270915T233000Z
+DTEND:20270916T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1528,8 +1528,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-46@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270916T003000Z
-DTEND:20270916T043000Z
+DTSTART:20270922T233000Z
+DTEND:20270923T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1541,8 +1541,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-47@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270923T003000Z
-DTEND:20270923T043000Z
+DTSTART:20270929T233000Z
+DTEND:20270930T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1554,8 +1554,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-48@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270930T003000Z
-DTEND:20270930T043000Z
+DTSTART:20271006T233000Z
+DTEND:20271007T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1567,8 +1567,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-49@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271007T003000Z
-DTEND:20271007T043000Z
+DTSTART:20271013T233000Z
+DTEND:20271014T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1580,8 +1580,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-50@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271014T003000Z
-DTEND:20271014T043000Z
+DTSTART:20271020T233000Z
+DTEND:20271021T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\
@@ -1593,8 +1593,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1548466884045705350-51@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271021T003000Z
-DTEND:20271021T043000Z
+DTSTART:20271027T233000Z
+DTEND:20271028T033000Z
 SUMMARY:[SDAS] Worm Wednesday
 DESCRIPTION:SDAS Discord Scheduled Event\n\nMeet at Gaslight to battle th
  e Valakkar. This is a weekly event to help people get parts for Wikelo.\

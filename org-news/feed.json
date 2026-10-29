@@ -4,34 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1562135155676815502",
-      "title": "I will be posting a new channel soon with an easy startup guide for the new fleet manager if anyone has any problems, bu",
-      "body": "I will be posting a new channel soon with an easy startup guide for the new fleet manager if anyone has any problems, but it’s pretty self explanatory so I don’t foresee any issues",
-      "publishedAt": "2026-10-20T16:07:24.181000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562135155676815502"
-    },
-    {
-      "id": "discord-1562171449266016390",
-      "title": "At this time only Patches and above can post their ships. Prospects are considered new and have a high likelihood or eit",
-      "body": "At this time only Patches and above can post their ships. Prospects are considered new and have a high likelihood or either not staying with the Org or the game in general. So in order to mitigate hundreds of extra ships on the hanger of players who are not active with the Org we decided to make it Patch and above. Hopefully everyone understands everyone",
-      "publishedAt": "2026-10-20T18:31:37.247000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562171449266016390"
-    },
-    {
-      "id": "discord-1562172402425667616",
-      "title": "A guide has also been posted in #channel to help some people out.",
-      "body": "A guide has also been posted in #channel to help some people out.",
-      "publishedAt": "2026-10-20T18:35:24.498000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562172402425667616"
-    },
-    {
-      "id": "discord-1562177401557885032",
-      "title": "What Prospects can now do",
-      "body": "- Prospect — Now have Read Only access level.\n- View the Fleet Terminal and shared Org Fleet Registry.\n- Browse the Pilot Directory.\n- View ships, loadouts, and photos that members have chosen to share.\nThey cannot add, edit, delete, import, or share ships. everyone",
-      "publishedAt": "2026-10-20T18:55:16.384000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562177401557885032"
-    },
-    {
       "id": "discord-1562613563896369163",
       "title": "**__NEW SDAS FEATURE — TOP 5 ISSUE COUNCIL!__**",
       "body": "Good Friends. Bad Ideas. Legendary Stories. And occasionally, a few bugs.\nDudes, we’ve added a brand-new feature to SDAS.space designed to help our organization make a difference in the development of Star Citizen!\nIntroducing the SDAS TOP 5 ISSUE COUNCIL!\nCHECK IT OUT HERE:\nhttps://sdas.space/#issue-council\nWHAT IS IT?\nWe’ve created a dedicated section on our website that highlights five Star Citizen bugs or issues we want to bring to the community’s attention.\nRather than simply complaining about broken missions, disappearing cargo, or whatever else the ‘verse throws at us, we can now help bring those issues to CIG’s attention through the official Issue Council.\nHOW DOES IT WORK?\nSubmit Yo",
@@ -80,6 +52,36 @@
       "body": "Also I know Iv been slacking on these new members announcements moving forward I’ll put out all the new members we gain in the week on Sundays so it will be a once a week thing if anyone is promoted in that time I’ll also do those on Sundays.",
       "publishedAt": "2026-10-25T19:57:30.987000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1564005004946178069"
+    },
+    {
+      "id": "discord-1565164852744556658",
+      "title": "__**Org News**__",
+      "body": "**A new spin on the Org bank!**\nI know for a while the Org Bank has been here and there its changed hands a few times well gone are the days!\nNow introducing the [member] he is the Orgs personal Org Bank bot courteous of [member]!\nVisit the #channel to get started or take a look at what's available!\n🏦 **The Org Vault: A Member's Guide**\nThe vault is the org's shared stash: components, weapons, armor, and materials in every quality (rarity), so we can pool what we've got and craft gear together for the org. The Vault Bot keeps track of all of it. Here's everything you need to know, and it's not much.\n📦 **/request: grab something from the vault**\nThis is the big one. Type /request and Discord ",
+      "publishedAt": "2026-10-29T00:46:20.251000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565164852744556658"
+    },
+    {
+      "id": "discord-1565164893538226229",
+      "title": "🗃️ /**inventory: window shopping**",
+      "body": "See everything that's in stock right now. Only you can see the list, so browse all you want without spamming the channel. It's a great way to check what's there before you /request.\n❓ /**help: when in doubt**\nLists every command you're able to use, with a quick line on what each one does. If you forget everything else on this page, remember this one.\n📊 **Reports: what's going on in the vault**\nDaily report: every morning at 8am Pacific. It covers what came in, what went out, and the new totals. It only posts when the inventory actually changed, so a quiet day means no post. 😴\nWeekly roundup: every Monday at 8am Pacific. It highlights all the changes across the week, plus a few fun stats like",
+      "publishedAt": "2026-10-29T00:46:29.977000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565164893538226229"
+    },
+    {
+      "id": "discord-1565164979093643355",
+      "title": "SDAS artwork",
+      "body": "Artwork shared in #org-news.",
+      "publishedAt": "2026-10-29T00:46:50.375000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565164979093643355",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1565164979093643355.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1565165014011084921",
+      "title": "everyone",
+      "body": "everyone",
+      "publishedAt": "2026-10-29T00:46:58.700000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565165014011084921"
     }
   ]
 }

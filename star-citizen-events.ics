@@ -187,19 +187,6 @@ DESCRIPTION:ANNUAL — Luminalia is canonically celebrated December 22\; CI
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pipeline-day-of-the-vara@sdas-star-citizen
-DTSTAMP:20261005T180000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[CIG] Day Of The Vara
-DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://robertsspac
- eindustries.com/en/comm-link/transmission/21388-This-Week-In-Star-Citize
- n
-URL:https://robertsspaceindustries.com/en/comm-link/transmission/21388-Th
- is-Week-In-Star-Citizen
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:discord-1544483191786578031-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261106T000000Z
@@ -1606,15 +1593,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1562271120659452024@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261031T010000Z
-DTEND:20261031T050000Z
+DTSTART:20261031T003000Z
+DTEND:20261031T043000Z
 SUMMARY:[SDAS] Friday Night Fights
-DESCRIPTION:SDAS Discord Scheduled Event\n\nIT’S TIME! Last Friday of eve
- ry month is Friday Night Fights! Locations will change every fight night
- .\n\nNext Fight will be held in the Constellation MK5\, Location CheckMa
- te\, Pyro! 1 Million AUEC buy in\, single elimination and winner takes i
- t all.\n\nView event in Discord: https://discord.com/events/151841001924
- 9459236/1562271120659452024
+DESCRIPTION:SDAS Discord Scheduled Event\n\nBuy-in: 1\,000\,000 aUEC\nPay
+ out split: 80% / 20%\nFight card: https://discord.com/channels/151841001
+ 9249459236/1565749172810940458/1565749978926813356\n\nView event in Disc
+ ord: https://discord.com/events/1518410019249459236/1562271120659452024
 RRULE:FREQ=MONTHLY;BYDAY=5SA
 URL:https://discord.com/events/1518410019249459236/1562271120659452024
 TRANSP:TRANSPARENT

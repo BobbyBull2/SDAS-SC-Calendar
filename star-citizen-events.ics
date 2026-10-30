@@ -202,8 +202,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261030T000000Z
-DTEND:20261030T040000Z
+DTSTART:20261106T000000Z
+DTEND:20261106T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -216,8 +216,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-1@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261106T010000Z
-DTEND:20261106T050000Z
+DTSTART:20261113T000000Z
+DTEND:20261113T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -230,8 +230,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-2@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261113T010000Z
-DTEND:20261113T050000Z
+DTSTART:20261120T000000Z
+DTEND:20261120T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -244,8 +244,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-3@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261120T010000Z
-DTEND:20261120T050000Z
+DTSTART:20261127T000000Z
+DTEND:20261127T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -258,8 +258,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-4@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261127T010000Z
-DTEND:20261127T050000Z
+DTSTART:20261204T000000Z
+DTEND:20261204T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -272,8 +272,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-5@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261204T010000Z
-DTEND:20261204T050000Z
+DTSTART:20261211T000000Z
+DTEND:20261211T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -286,8 +286,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-6@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261211T010000Z
-DTEND:20261211T050000Z
+DTSTART:20261218T000000Z
+DTEND:20261218T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -300,8 +300,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-7@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261218T010000Z
-DTEND:20261218T050000Z
+DTSTART:20261225T000000Z
+DTEND:20261225T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -314,8 +314,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-8@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261225T010000Z
-DTEND:20261225T050000Z
+DTSTART:20270101T000000Z
+DTEND:20270101T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -328,8 +328,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-9@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270101T010000Z
-DTEND:20270101T050000Z
+DTSTART:20270108T000000Z
+DTEND:20270108T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -342,8 +342,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-10@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270108T010000Z
-DTEND:20270108T050000Z
+DTSTART:20270115T000000Z
+DTEND:20270115T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -356,8 +356,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-11@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270115T010000Z
-DTEND:20270115T050000Z
+DTSTART:20270122T000000Z
+DTEND:20270122T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -370,8 +370,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-12@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270122T010000Z
-DTEND:20270122T050000Z
+DTSTART:20270129T000000Z
+DTEND:20270129T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -384,8 +384,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-13@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270129T010000Z
-DTEND:20270129T050000Z
+DTSTART:20270205T000000Z
+DTEND:20270205T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -398,8 +398,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-14@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270205T010000Z
-DTEND:20270205T050000Z
+DTSTART:20270212T000000Z
+DTEND:20270212T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -412,8 +412,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-15@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270212T010000Z
-DTEND:20270212T050000Z
+DTSTART:20270219T000000Z
+DTEND:20270219T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -426,8 +426,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-16@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270219T010000Z
-DTEND:20270219T050000Z
+DTSTART:20270226T000000Z
+DTEND:20270226T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -440,8 +440,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-17@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270226T010000Z
-DTEND:20270226T050000Z
+DTSTART:20270305T000000Z
+DTEND:20270305T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -454,8 +454,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-18@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270305T010000Z
-DTEND:20270305T050000Z
+DTSTART:20270312T000000Z
+DTEND:20270312T040000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -468,8 +468,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-19@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270312T010000Z
-DTEND:20270312T050000Z
+DTSTART:20270318T230000Z
+DTEND:20270319T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -482,8 +482,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-20@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270319T000000Z
-DTEND:20270319T040000Z
+DTSTART:20270325T230000Z
+DTEND:20270326T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -496,8 +496,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-21@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270326T000000Z
-DTEND:20270326T040000Z
+DTSTART:20270401T230000Z
+DTEND:20270402T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -510,8 +510,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-22@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270402T000000Z
-DTEND:20270402T040000Z
+DTSTART:20270408T230000Z
+DTEND:20270409T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -524,8 +524,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-23@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270409T000000Z
-DTEND:20270409T040000Z
+DTSTART:20270415T230000Z
+DTEND:20270416T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -538,8 +538,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-24@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270416T000000Z
-DTEND:20270416T040000Z
+DTSTART:20270422T230000Z
+DTEND:20270423T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -552,8 +552,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-25@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270423T000000Z
-DTEND:20270423T040000Z
+DTSTART:20270429T230000Z
+DTEND:20270430T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -566,8 +566,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-26@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270430T000000Z
-DTEND:20270430T040000Z
+DTSTART:20270506T230000Z
+DTEND:20270507T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -580,8 +580,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-27@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270507T000000Z
-DTEND:20270507T040000Z
+DTSTART:20270513T230000Z
+DTEND:20270514T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -594,8 +594,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-28@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270514T000000Z
-DTEND:20270514T040000Z
+DTSTART:20270520T230000Z
+DTEND:20270521T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -608,8 +608,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-29@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270521T000000Z
-DTEND:20270521T040000Z
+DTSTART:20270527T230000Z
+DTEND:20270528T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -622,8 +622,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-30@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270528T000000Z
-DTEND:20270528T040000Z
+DTSTART:20270603T230000Z
+DTEND:20270604T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -636,8 +636,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-31@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270604T000000Z
-DTEND:20270604T040000Z
+DTSTART:20270610T230000Z
+DTEND:20270611T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -650,8 +650,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-32@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270611T000000Z
-DTEND:20270611T040000Z
+DTSTART:20270617T230000Z
+DTEND:20270618T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -664,8 +664,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-33@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270618T000000Z
-DTEND:20270618T040000Z
+DTSTART:20270624T230000Z
+DTEND:20270625T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -678,8 +678,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-34@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270625T000000Z
-DTEND:20270625T040000Z
+DTSTART:20270701T230000Z
+DTEND:20270702T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -692,8 +692,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-35@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270702T000000Z
-DTEND:20270702T040000Z
+DTSTART:20270708T230000Z
+DTEND:20270709T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -706,8 +706,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-36@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270709T000000Z
-DTEND:20270709T040000Z
+DTSTART:20270715T230000Z
+DTEND:20270716T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -720,8 +720,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-37@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270716T000000Z
-DTEND:20270716T040000Z
+DTSTART:20270722T230000Z
+DTEND:20270723T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -734,8 +734,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-38@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270723T000000Z
-DTEND:20270723T040000Z
+DTSTART:20270729T230000Z
+DTEND:20270730T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -748,8 +748,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-39@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270730T000000Z
-DTEND:20270730T040000Z
+DTSTART:20270805T230000Z
+DTEND:20270806T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -762,8 +762,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-40@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270806T000000Z
-DTEND:20270806T040000Z
+DTSTART:20270812T230000Z
+DTEND:20270813T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -776,8 +776,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-41@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270813T000000Z
-DTEND:20270813T040000Z
+DTSTART:20270819T230000Z
+DTEND:20270820T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -790,8 +790,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-42@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270820T000000Z
-DTEND:20270820T040000Z
+DTSTART:20270826T230000Z
+DTEND:20270827T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -804,8 +804,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-43@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270827T000000Z
-DTEND:20270827T040000Z
+DTSTART:20270902T230000Z
+DTEND:20270903T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -818,8 +818,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-44@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270903T000000Z
-DTEND:20270903T040000Z
+DTSTART:20270909T230000Z
+DTEND:20270910T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -832,8 +832,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-45@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270910T000000Z
-DTEND:20270910T040000Z
+DTSTART:20270916T230000Z
+DTEND:20270917T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -846,8 +846,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-46@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270917T000000Z
-DTEND:20270917T040000Z
+DTSTART:20270923T230000Z
+DTEND:20270924T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -860,8 +860,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-47@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20270924T000000Z
-DTEND:20270924T040000Z
+DTSTART:20270930T230000Z
+DTEND:20271001T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -874,8 +874,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-48@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271001T000000Z
-DTEND:20271001T040000Z
+DTSTART:20271007T230000Z
+DTEND:20271008T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -888,8 +888,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-49@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271008T000000Z
-DTEND:20271008T040000Z
+DTSTART:20271014T230000Z
+DTEND:20271015T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -902,8 +902,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-50@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271015T000000Z
-DTEND:20271015T040000Z
+DTSTART:20271021T230000Z
+DTEND:20271022T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t
@@ -916,8 +916,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:discord-1544483191786578031-51@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20271022T000000Z
-DTEND:20271022T040000Z
+DTSTART:20271028T230000Z
+DTEND:20271029T030000Z
 SUMMARY:[SDAS] Org Mining Event
 DESCRIPTION:SDAS Discord Scheduled Event\n\nCome join us in a massive res
  ource mining extravaganza to supply the org with mats. These mats will t

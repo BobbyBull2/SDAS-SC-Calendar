@@ -4,22 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1562613563896369163",
-      "title": "**__NEW SDAS FEATURE — TOP 5 ISSUE COUNCIL!__**",
-      "body": "Good Friends. Bad Ideas. Legendary Stories. And occasionally, a few bugs.\nDudes, we’ve added a brand-new feature to SDAS.space designed to help our organization make a difference in the development of Star Citizen!\nIntroducing the SDAS TOP 5 ISSUE COUNCIL!\nCHECK IT OUT HERE:\nhttps://sdas.space/#issue-council\nWHAT IS IT?\nWe’ve created a dedicated section on our website that highlights five Star Citizen bugs or issues we want to bring to the community’s attention.\nRather than simply complaining about broken missions, disappearing cargo, or whatever else the ‘verse throws at us, we can now help bring those issues to CIG’s attention through the official Issue Council.\nHOW DOES IT WORK?\nSubmit Yo",
-      "publishedAt": "2026-10-21T23:48:25.589000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562613563896369163"
-    },
-    {
-      "id": "discord-1562614347472179251",
-      "title": "SDAS artwork",
-      "body": "Artwork shared in #org-news.",
-      "publishedAt": "2026-10-21T23:51:32.408000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1562614347472179251",
-      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1562614347472179251.webp",
-      "imageAlt": "Artwork shared with this SDAS announcement"
-    },
-    {
       "id": "discord-1562620029768310935",
       "title": "**__Promotions __**",
       "body": "[member] , [member] , [member] , [member] , [member] , [member] , [member] , [member] [member] [member] [member] [member]  Are all being promoted to Patch for their contributions to the Community and for being active members. Buy em a round! <a:Cheers:750302311607173171>  everyone",
@@ -82,6 +66,22 @@
       "body": "everyone",
       "publishedAt": "2026-10-29T00:46:58.700000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565165014011084921"
+    },
+    {
+      "id": "discord-1565772611718357234",
+      "title": "__**Org News**__",
+      "body": "#channel\n# 🥊 **Fight Night: How It Works**\nFight Night just got a serious upgrade. The bot now tracks every aUEC that moves through the night: buy-ins, bets, winnings, all of it. No more scribbled notes and \"wait, who owed who?\" At the end, you get one payout for everything you won.\n** Want to fight?**\nClick **Join** on the fight card, then pay your buy-in to the Treasurer. You have to sign up through the bot, even if you're standing right next to the Treasurer with cash in hand. If it's not in the bot, it doesn't count.\nOnce the Treasurer confirms your payment, your ⏳ turns into a ✅ and you're in.\n** Want to bet?**\nThis is where it gets fun. Anyone in the server can get in on the action, an",
+      "publishedAt": "2026-10-30T17:01:21.282000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565772611718357234",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1565772611718357234.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1565774664817705084",
+      "title": "The fights will be in Bobby’s large hangar, checkmate",
+      "body": "The fights will be in Bobby’s large hangar, checkmate",
+      "publishedAt": "2026-10-30T17:09:30.779000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565774664817705084"
     }
   ]
 }

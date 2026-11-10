@@ -200,6 +200,19 @@ URL:https://robertsspaceindustries.com/en/comm-link/transmission/21445-Th
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pipeline-free-fly@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[CIG] Free Fly
+DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://robertsspac
+ eindustries.com/spectrum/community/SC/forum/1/thread/iae-2956-faq-choose
+ -your-adventure/575984
+URL:https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thre
+ ad/iae-2956-faq-choose-your-adventure/575984
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:discord-1544483191786578031-0@sdas-star-citizen
 DTSTAMP:20261005T180000Z
 DTSTART:20261113T000000Z

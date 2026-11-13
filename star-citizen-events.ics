@@ -189,14 +189,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pipeline-iae@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
 SUMMARY:[CIG] Iae
-DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://robertsspac
- eindustries.com/en/comm-link/transmission/21445-This-Week-In-Star-Citize
- n
-URL:https://robertsspaceindustries.com/en/comm-link/transmission/21445-Th
- is-Week-In-Star-Citizen
+DESCRIPTION:CIG/PIPELINE dated announcement\\nSource: https://discord.com
+ /channels/1518410019249459236/1519103965290168560/1570914631864549378
+URL:https://discord.com/channels/1518410019249459236/1519103965290168560/
+ 1570914631864549378
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

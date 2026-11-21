@@ -2502,15 +2502,17 @@ URL:https://discord.com/events/1518410019249459236/1567200347921973339
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:discord-1573393752838381700@sdas-star-citizen
+UID:discord-1573549727956344852@sdas-star-citizen
 DTSTAMP:20261005T180000Z
-DTSTART:20261121T013000Z
-DTEND:20261121T053000Z
-SUMMARY:[SDAS] Vanduul Intersec
-DESCRIPTION:SDAS Discord Scheduled Event\n\nlets bang out some blueprints
- \n\nView event in Discord: https://discord.com/events/151841001924945923
- 6/1573393752838381700
-URL:https://discord.com/events/1518410019249459236/1573393752838381700
+DTSTART:20261122T010000Z
+DTEND:20261122T050000Z
+SUMMARY:[SDAS] Joint Org Op
+DESCRIPTION:SDAS Discord Scheduled Event\n\nWe will be doing Carrier ops 
+ with the Tugunauts. We will load up a Liberator with Fighters\, a Polari
+ s and or Idris depending on how many people we get. And we will go out a
+ nd patrol Pyro. We will be meeting at Checkmate.\n\nView event in Discor
+ d: https://discord.com/events/1518410019249459236/1573549727956344852
+URL:https://discord.com/events/1518410019249459236/1573549727956344852
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

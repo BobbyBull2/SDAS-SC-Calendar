@@ -2513,4 +2513,20 @@ DESCRIPTION:SDAS Discord Scheduled Event\n\nOne Org will mine one hole an
 URL:https://discord.com/events/1518410019249459236/1574598098364145837
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:discord-1574887017299583066@sdas-star-citizen
+DTSTAMP:20261005T180000Z
+DTSTART:20261125T010000Z
+DTEND:20261125T050000Z
+SUMMARY:[SDAS] TSG Tuesday (tactical strike group)
+DESCRIPTION:SDAS Discord Scheduled Event\n\nIt's TSG Tuesday!!! We get to
+  defend tranquility and hope that gabe gets away. Bring your own fighter
+  if you want but make sure it can handle distortion in the tunnel run if
+  you are taking it in there. Big ship players bring out your toys so tha
+ t we can run the turrets and let's get some loot and blue prints hopeful
+ ly fellas\n\nView event in Discord: https://discord.com/events/151841001
+ 9249459236/1574887017299583066
+URL:https://discord.com/events/1518410019249459236/1574887017299583066
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

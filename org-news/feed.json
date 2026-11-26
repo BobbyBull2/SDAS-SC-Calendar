@@ -4,13 +4,6 @@
   "channelId": "1519103863758520471",
   "items": [
     {
-      "id": "discord-1565164852744556658",
-      "title": "__**Org News**__",
-      "body": "**A new spin on the Org bank!**\nI know for a while the Org Bank has been here and there its changed hands a few times well gone are the days!\nNow introducing the [member] he is the Orgs personal Org Bank bot courteous of [member]!\nVisit the #channel to get started or take a look at what's available!\n🏦 **The Org Vault: A Member's Guide**\nThe vault is the org's shared stash: components, weapons, armor, and materials in every quality (rarity), so we can pool what we've got and craft gear together for the org. The Vault Bot keeps track of all of it. Here's everything you need to know, and it's not much.\n📦 **/request: grab something from the vault**\nThis is the big one. Type /request and Discord ",
-      "publishedAt": "2026-10-29T00:46:20.251000Z",
-      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1565164852744556658"
-    },
-    {
       "id": "discord-1565164893538226229",
       "title": "🗃️ /**inventory: window shopping**",
       "body": "See everything that's in stock right now. Only you can see the list, so browse all you want without spamming the channel. It's a great way to check what's there before you /request.\n❓ /**help: when in doubt**\nLists every command you're able to use, with a quick line on what each one does. If you forget everything else on this page, remember this one.\n📊 **Reports: what's going on in the vault**\nDaily report: every morning at 8am Pacific. It covers what came in, what went out, and the new totals. It only posts when the inventory actually changed, so a quiet day means no post. 😴\nWeekly roundup: every Monday at 8am Pacific. It highlights all the changes across the week, plus a few fun stats like",
@@ -81,6 +74,15 @@
       "publishedAt": "2026-11-25T18:56:41.635000Z",
       "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1575223722288357447",
       "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1575223722288357447.webp",
+      "imageAlt": "Artwork shared with this SDAS announcement"
+    },
+    {
+      "id": "discord-1575602408032313347",
+      "title": "🦃 **__Happy Thanksgiving, Dudes!__**",
+      "body": "From all of us at Some Dudes and a Spaceship, we want to wish everyone a Happy Thanksgiving!\nEnjoy some good food, crack open a cold one, and spend some time with family and friends. For those spending their holiday in the Verse, may your servers be stable, your ships stay intact, and your cargo actually make it to its destination.\nThanks for being part of SDAS and making this community a damn good place to hang out.\nEat well, drink responsibly, and fly dangerously. 🍻\nFrom SDAS Leadership. everyone",
+      "publishedAt": "2026-11-26T20:01:27.352000Z",
+      "discordUrl": "https://discord.com/channels/1518410019249459236/1519103863758520471/1575602408032313347",
+      "imageUrl": "https://bobbybull2.github.io/SDAS-SC-Calendar/org-news/images/1575602408032313347.webp",
       "imageAlt": "Artwork shared with this SDAS announcement"
     }
   ]
